@@ -25,12 +25,12 @@ div.social_net{
   justify-content: space-between;
 }
 
-div.social_net a{
+div.social_net > a{
   /* border: 1px solid blue; */
   display: inline-block;
 }
 
-footer h2{
+footer h2.footer_logo{
   /* border: 1px solid black; */
   text-align: center;
   font-size: 30px;
