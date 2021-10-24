@@ -1,3 +1,134 @@
 @import "./common/common.css";
 @import "./common/header.css";
 @import "./common/footer.css";
+
+/* nav bar指定 */
+ul.uni_kr_list > li:last-child > a{
+  text-decoration: underline;
+}
+
+/* 標題大banner */
+div.banner_img{
+  /* border: 1px solid black; */
+  background-image: url(../images/routine_list/banner.png);
+  height: 600px;
+  min-width: 1200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center, center;
+  position: relative;
+  z-index: -1;
+}
+
+h1.title{
+  /* border: 1px solid red; */
+  border-radius: 10px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 50px;
+  width: 790px;
+  height: 170px;
+  background-color: rgba(179, 22, 65, 0.7);
+  font-size: 64px;
+  text-align: center;
+  line-height: 170px;
+  color: white;
+}
+
+main{
+  /* border: 1px solid black; */
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* 小標題 */
+h2.sub_title{
+  /* border: 1px solid black; */
+  width: 790px;
+  margin: 150px auto;
+  position: relative;
+  font-size: 24px;
+}
+
+h2.sub_title::before{
+  content: "";
+  /* border: 1px solid red; */
+  display: inline-block;
+  position: absolute;
+  z-index: -1;
+  width: 250px;
+  height: 60px;
+  top: -10px;
+  left: -30px;
+  background-color: #EB9090;
+}
+
+/* article */
+main > div{
+  /* border: 1px solid blue; */
+  width: 996px;
+  height: 480px;
+  margin-bottom: 150px;
+  display: flex;
+  justify-content: flex-end;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+a.article{
+  /* border: 1px solid red; */
+  text-decoration: none;
+  display: block;
+  width: 175px;
+  position: relative;
+  font-size: 0;
+}
+
+a.blue{
+  background-color: rgba(160, 180, 231, 0.7);
+}
+
+a.red{
+  background-color: rgba(235, 144, 144, 0.7);
+}
+
+p.words{
+  /* border: 1px solid green; */
+  writing-mode: vertical-lr;
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: bold;
+  color: black;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  left: 50%;
+}
+
+a.article > img{
+  /* border: 1px solid blue; */
+  position: absolute;
+  left: 50%;
+  transform: translateX(-40%);
+  bottom: 100px;
+}
+
+div.season{
+  background-image: url(../images/routine_list/season.png);
+}
+
+div.classic{
+  background-image: url(../images/routine_list/classic.png);
+  margin-left: calc(100% - 996px);
+}
+
+div.shopping{
+  background-image: url(../images/routine_list/shopping.png);
+}
+
+div.star{
+  background-image: url(../images/routine_list/star.png);
+  margin-left: calc(100% - 996px);
+}

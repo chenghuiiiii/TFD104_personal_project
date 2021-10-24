@@ -3,6 +3,9 @@ header{
   width: 100%;
   margin: 0 auto;
   background-color: #C4C4C4;
+  /* position: sticky;
+  top: 0px;
+  z-index: 20; */
 }
 
 nav.nav{

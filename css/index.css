@@ -393,3 +393,7 @@ div.subscribe_type button{
   border: 0 none;
   border-radius: 5px;
 }
+
+div.subscribe_type button:hover{
+  cursor: pointer;
+}

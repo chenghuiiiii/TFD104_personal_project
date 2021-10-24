@@ -2,6 +2,11 @@
 @import "./common/header.css";
 @import "./common/footer.css";
 
+/* nav bar指定 */
+ul.nav_list > li:nth-child(2) > a{
+  text-decoration: underline;
+}
+
 /* 標題大banner */
 div.banner_img{
   /* border: 1px solid black; */
@@ -12,6 +17,7 @@ div.banner_img{
   background-size: cover;
   background-position: center, center;
   position: relative;
+  z-index: -1;
 }
 
 h1.title{
@@ -106,7 +112,7 @@ a.article > img{
   position: absolute;
   left: 50%;
   transform: translateX(-40%);
-  bottom: 150px;
+  bottom: 140px;
 }
 
 div.transportation{
