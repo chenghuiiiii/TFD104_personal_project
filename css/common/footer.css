@@ -1,0 +1,57 @@
+/* 最後 */
+footer{
+  /* border: 1px solid black; */
+  height: 500px;
+  background-color: #C4C4C4;
+  padding: 30px 120px;
+}
+
+footer > a{
+  /* border: 1px solid black; */
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  margin: 20px 20px;
+}
+
+div.social_net{
+  /* border: 1px solid red; */
+  width: 220px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+div.social_net a{
+  /* border: 1px solid blue; */
+  display: inline-block;
+}
+
+footer h2{
+  /* border: 1px solid black; */
+  text-align: center;
+  font-size: 30px;
+  margin: 30px auto;
+}
+
+div.reference{
+  /* border: 1px solid black; */
+  width: 1000px;
+  margin: 0 auto;
+}
+
+div.reference p{
+  /* border: 1px solid red; */
+  text-align: center;
+  font-size: 16px;
+  margin: 5px;
+}
+
+div.reference p a{
+  text-decoration: none;
+  color: black;
+  font-weight: bolder;
+}

@@ -1,0 +1,14 @@
+@import "./common/common.css";
+@import "./common/header.css";
+@import "./common/footer.css";
+
+div.banner_img{
+  /* border: 1px solid black; */
+  background-image: url(../images/must_see/banner.png);
+  height: 600px;
+  min-width: 1200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center, center;
+  position: relative;
+}

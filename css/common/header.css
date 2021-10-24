@@ -1,0 +1,84 @@
+header{
+  /* border: 1px solid black; */
+  width: 100%;
+  margin: 0 auto;
+  background-color: #C4C4C4;
+}
+
+nav.nav{
+  /* border: 1px solid red; */
+  vertical-align: top;
+  background-color: #C4C4C4;
+  width: 1200px;
+  margin: 0 auto;
+  height: 100px;
+  position: relative;
+}
+
+nav img.logo_img{
+  /* border: 1px solid blue; */
+  width: 285px;
+  margin: 5px;
+  display: inline-block;
+
+}
+
+nav ul.nav_list{
+  /* border: 1px solid blue; */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  vertical-align: top;
+  position: absolute;
+  right: 0px;
+}
+
+nav ul.nav_list > li{
+  /* border: 1px solid blue; */
+  display: inline-block;
+  vertical-align: top;
+  font-size: 22px;
+  width: 120px;
+  margin: 0;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  font-weight: bold;
+}
+
+div.uni_kr ul, div.travel_tip ul{
+  /* border: 3px solid white; */
+  border-top: 3px solid;
+  list-style: none;
+  text-align: center;
+  width: 120px;
+  padding: 0;
+  display: none;
+}
+
+ul.nav_list li:first-child:hover ul.uni_kr_list{
+  display: block;
+}
+
+ul.nav_list li:nth-child(2):hover ul.travel_tip_list{
+  display: block;
+}
+
+div.uni_kr ul li, div.travel_tip ul li{
+  background-color: #C4C4C4;
+  width: 120px;
+  height: 60px;
+  line-height: 60px;
+}
+
+div.uni_kr ul > li > a, div.travel_tip ul > li > a{
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
+nav ul.nav_list > li > a{
+  color: black;
+  text-decoration: none;
+}
