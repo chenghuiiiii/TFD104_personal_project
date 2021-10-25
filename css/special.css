@@ -2,6 +2,11 @@
 @import "./common/header.css";
 @import "./common/footer.css";
 
+/* nav bar指定 */
+ul.nav_list > li:nth-child(3) > a{
+  text-decoration: underline;
+}
+
 /* 標題大banner */
 div.banner_img{
   /* border: 1px solid black; */
@@ -184,7 +189,7 @@ ul.collabo_shop > li:last-child > a{
 }
 
 ul.collabo_shop > li:last-child > a:hover{
-  background-color: black;
+  background-color: rgba(106, 106, 106, 0.8);
   color: white;
 }
 

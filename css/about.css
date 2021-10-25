@@ -1,3 +1,56 @@
 @import "./common/common.css";
 @import "./common/header.css";
 @import "./common/footer.css";
+
+/* 標題大banner */
+div.banner_img{
+  /* border: 1px solid black; */
+  background-image: url(../images/about/banner.png);
+  height: 600px;
+  min-width: 1200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center, center;
+  z-index: -1;
+}
+
+main{
+  border: 1px solid black;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* 關於UNI */
+h1.title{
+  border: 1px solid red;
+  margin: 150px auto 0 auto;
+  width: 996px;
+  padding: 30px;
+  text-align: center;
+  position: relative;
+  font-size: 48px;
+}
+
+h1.title:first-child::before{
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 450px;
+  height: 50px;
+  background-color: #C4C4C4;
+  top: 13px;
+  left: 240px;
+  z-index: -1;
+}
+
+h1.title:last-child::before{
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 450px;
+  height: 50px;
+  background-color: #C4C4C4;
+  top: 13px;
+  left: 240px;
+  z-index: -1;
+}

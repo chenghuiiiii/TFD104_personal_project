@@ -10,6 +10,7 @@ div.banner_img{
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center, center;
+  z-index: -1;
 }
 
 /* 主要內容們 */
