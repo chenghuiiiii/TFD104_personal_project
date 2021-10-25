@@ -7,6 +7,7 @@ ul.uni_kr_list > li:nth-child(2) > a{
   text-decoration: underline;
 }
 
+/* 標題大banner */
 div.banner_img{
   /* border: 1px solid black; */
   background-image: url(../images/place_list/banner.png);

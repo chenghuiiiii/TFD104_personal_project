@@ -1,3 +1,200 @@
 @import "./common/common.css";
 @import "./common/header.css";
 @import "./common/footer.css";
+
+/* 標題大banner */
+div.banner_img{
+  /* border: 1px solid black; */
+  background-image: url(../images/special/banner.png);
+  height: 600px;
+  min-width: 1200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center, center;
+  position: relative;
+  z-index: -1;
+}
+
+h1.title{
+  /* border: 1px solid red; */
+  border-radius: 10px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 50px;
+  width: 790px;
+  height: 170px;
+  background-color: rgba(19, 54, 143, 0.7);
+  font-size: 64px;
+  text-align: center;
+  line-height: 170px;
+  color: white;
+}
+
+/* 結構 */
+main{
+  /* border: 1px solid black; */
+  width: 1200px;
+  margin: 0 auto;
+}
+
+article{
+  /* border: 1px solid blue; */
+  margin: 150px 0;
+  /* font-size: 0; */
+}
+
+div.title{
+  /* border: 1px solid red; */
+  border-radius: 5px;
+  width: 996px;
+  height: 300px;
+  margin: 0 auto;
+  position: relative;
+}
+
+div.title > h1{
+  /* border: 1px solid green; */
+  text-align: center;
+  margin: 0;
+  font-size: 64px;
+  color: white;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  text-shadow: 0px 0px 5px black;
+}
+
+/* 客製&代購 */
+div.parent_container{
+  display: block;
+  vertical-align: middle;
+}
+
+div.order_banner{
+  background-image: url(../images/special/order.png);
+}
+
+div.custom_banner{
+  background-image: url(../images/special/custom.png);
+}
+
+div.content_custom, div.content_order, div.content_collabo{
+  /* border: 1px solid red; */
+  width: 100%;
+  padding: 30px 100px;
+  position: relative;
+}
+
+div.words{
+  /* border: 1px solid black; */
+  display: inline-block;
+  width: 590px;
+  margin-left: 101px;
+}
+
+div.words p{
+  /* border: 1px solid green; */
+  width: 590px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 30px;
+  margin: 0;
+  display: inline-block;
+}
+
+div.words p:last-child{
+  font-size: 14px;
+  font-weight: normal;
+}
+a.form_link{
+  /* border: 1px solid blue; */
+  width: 184px;
+  height: 55px;
+  display: inline-block;
+  color: black;
+  position: absolute;
+  right: 202px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0 15px;
+  line-height: 57px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #EB9090;
+  border-radius: 5px;
+}
+
+a.form_link img{
+  display: inline-block;
+  margin-left: 20px;
+  vertical-align: middle;
+}
+
+a.form_link:hover{
+  background-color: #A0B4E7;
+}
+
+/* 店家 */
+div.collabo_banner{
+  background-image: url(../images/special/collabo.png);
+}
+
+article.collabo > p{
+  /* border: 1px solid green; */
+  width: 794px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 30px;
+  margin: 30px auto;
+}
+
+ul.collabo_shop{
+  /* border: 1px solid red; */
+  list-style: none;
+  padding: 0 30px;
+  width: 996px;
+  margin: 0 auto;
+}
+
+ul.collabo_shop li{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+ul.collabo_shop a{
+  /* border: 1px solid black; */
+  display: block;
+  width: 183px;
+  margin-right: 20px;
+}
+
+ul.collabo_shop > li:last-child > a{
+  width: 80px;
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  background-color: #C4C4C4;
+  border-radius: 5px;
+}
+
+ul.collabo_shop > li:last-child > a:hover{
+  background-color: black;
+  color: white;
+}
+
+div.content_collabo p{
+  /* border: 1px solid green; */
+  width: 590px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 30px;
+  margin-left: 101px;
+  display: inline-block;
+}
