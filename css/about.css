@@ -16,7 +16,6 @@ div.banner_img{
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center, center;
-  z-index: -1;
 }
 
 main{
@@ -314,4 +313,5 @@ div.subscribe button{
 
 div.subscribe button:hover{
   cursor: pointer;
+  background-color: #A0B4E7;
 }
