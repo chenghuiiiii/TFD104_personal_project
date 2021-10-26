@@ -397,4 +397,5 @@ div.subscribe_type button{
 
 div.subscribe_type button:hover{
   cursor: pointer;
+  background-color: #A0B4E7;
 }
