@@ -1,6 +1,7 @@
 /* 最後 */
 footer{
   /* border: 1px solid black; */
+  min-width: 1200px;
   height: 500px;
   background-color: #C4C4C4;
   padding: 30px 120px;
@@ -39,8 +40,7 @@ footer h2.footer_logo{
 
 div.reference{
   /* border: 1px solid black; */
-  width: 1000px;
-  margin: 0 auto;
+  margin: 20px auto;
 }
 
 div.reference p{
