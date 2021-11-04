@@ -49,7 +49,7 @@ nav ul.nav_list > li{
   font-weight: bold;
 }
 
-div.uni_kr ul, div.travel_tip ul{
+div.kr_travel ul, div.uni_service ul{
   /* border: 3px solid white; */
   border-top: 3px solid rgba(1, 1, 1, 0);;
   list-style: none;
@@ -59,22 +59,22 @@ div.uni_kr ul, div.travel_tip ul{
   display: none;
 }
 
-ul.nav_list li:first-child:hover ul.uni_kr_list{
+ul.nav_list li:first-child:hover ul.kr_travel_list{
   display: block;
 }
 
-ul.nav_list li:nth-child(2):hover ul.travel_tip_list{
+ul.nav_list li:nth-child(2):hover ul.uni_service_list{
   display: block;
 }
 
-div.uni_kr ul li, div.travel_tip ul li{
+div.kr_travel ul li, div.uni_service ul li{
   background-color: #C4C4C4;
   width: 120px;
   height: 60px;
   line-height: 60px;
 }
 
-div.uni_kr ul > li > a, div.travel_tip ul > li > a{
+div.kr_travel ul > li > a, div.uni_service ul > li > a{
   text-decoration: none;
   color: black;
   font-size: 20px;
@@ -97,7 +97,7 @@ nav ul.nav_list > li > a:hover{
   text-shadow: 0 0 5px rgba(106, 106, 106, 0.8);
 }
 
-div.uni_kr ul > li > a:hover, div.travel_tip ul > li > a:hover{
+div.kr_travel ul > li > a:hover, div.uni_service ul > li > a:hover{
   color: white;
   text-shadow: 0 0 5px rgba(106, 106, 106, 0.8);
 }

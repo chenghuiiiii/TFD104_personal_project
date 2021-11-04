@@ -3,7 +3,7 @@
 @import "./common/footer.css";
 
 /* nav bar指定 */
-ul.uni_kr_list > li:nth-child(2) > a{
+ul.kr_travel_list > li:nth-child(2) > a{
   text-decoration: underline;
 }
 
@@ -187,6 +187,7 @@ ul.pages > li > a{
   padding: 10px;
   display: block;
   margin: 5px;
+  border-radius: 5px;
 }
 
 ul.pages > li > a:hover{

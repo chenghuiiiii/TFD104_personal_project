@@ -3,7 +3,7 @@
 @import "./common/footer.css";
 
 /* nav bar指定 */
-ul.nav_list > li:nth-child(2) > a{
+ul.kr_travel_list > li:last-child > a{
   text-decoration: underline;
 }
 

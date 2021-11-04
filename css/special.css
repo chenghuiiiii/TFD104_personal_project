@@ -3,7 +3,7 @@
 @import "./common/footer.css";
 
 /* nav bar指定 */
-ul.nav_list > li:nth-child(3) > a{
+ul.uni_service_list > li:last-child > a{
   text-decoration: underline;
 }
 
@@ -114,11 +114,52 @@ div.words p:last-child{
   font-size: 14px;
   font-weight: normal;
 }
+
+div.link{
+  /* border: 1px solid black; */
+  display: inline-block;
+}
+
+div.link > a{
+  /* border: 1px solid blue; */
+  width: 184px;
+  height: 55px;
+  display: block;
+  color: black;
+  padding: 0 15px;
+  line-height: 57px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #EB9090;
+  border-radius: 5px;
+}
+
+a.customize_link{
+  position: absolute;
+  right: 202px;
+  top: 33%;
+  transform: translateY(-50%);
+}
+
+a.request_link{
+  position: absolute;
+  right: 202px;
+  top: 66%;
+  transform: translateY(-50%);
+}
+
+a > img{
+  display: inline-block;
+  margin-left: 20px;
+  vertical-align: middle;
+}
+
 a.form_link{
   /* border: 1px solid blue; */
   width: 184px;
   height: 55px;
-  display: inline-block;
+  display: block;
   color: black;
   position: absolute;
   right: 202px;
@@ -133,13 +174,7 @@ a.form_link{
   border-radius: 5px;
 }
 
-a.form_link img{
-  display: inline-block;
-  margin-left: 20px;
-  vertical-align: middle;
-}
-
-a.form_link:hover{
+div.content_custom a:hover, div.content_order a:hover, div.content_collabo a:hover{
   background-color: #A0B4E7;
 }
 
