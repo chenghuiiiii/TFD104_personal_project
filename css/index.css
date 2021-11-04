@@ -255,8 +255,8 @@ div.must_see_title{
   transform: translateY(-50%);
 }
 
-/* 專屬SPECIAL */
-div.special{
+/* ROUTINE&SPECIAL */
+div.special, div.routine{
   /* border: 1px solid black; */
   width: 996px;
   hetht: 300px;
@@ -264,7 +264,7 @@ div.special{
   font-size: 0;
 }
 
-div.special_left{
+div.special_left, div.routine_left{
   /* border: 1px solid red; */
   display: inline-block;
   width: calc(100% - 590px);
@@ -272,7 +272,7 @@ div.special_left{
   vertical-align: top;
 }
 
-div.special_left h2{
+div.special_left h2, div.routine_left h2{
   /* border: 1px solid black; */
   font-size: 24px;
   text-align: center;
@@ -282,7 +282,7 @@ div.special_left h2{
   position: relative;
 }
 
-div.special_left h2::before{
+div.special_left h2::before, div.routine_left h2::before{
   content: "";
   /* border: 1px solid blue; */
   width: 100px;
@@ -295,7 +295,11 @@ div.special_left h2::before{
   top: 15px;
 }
 
-div.special_left p{
+div.special_left h2::before{
+  background-color: #EB9090;
+}
+
+div.special_left p, div.routine_left p{
   /* border: 1px solid black; */
   font-size: 18px;
   margin: 0 35px;
@@ -304,18 +308,18 @@ div.special_left p{
   font-weight: bold;
 }
 
-div.special_right{
+div.special_right, div.routine_right{
   /* border: 1px solid green; */
   display: inline-block;
   width: 590px;
   position: relative;
 }
 
-div.special_right img{
+div.special_right img, div.routine_right img{
   width: 100%;
 }
 
-div.special_right h1{
+div.special_right h1, div.routine_right h1{
   /* border: 1px solid blue; */
   border-radius: 10px;
   background-color: rgba(145, 168, 227, 0.7);
@@ -330,6 +334,10 @@ div.special_right h1{
   margin: 0 calc((100% - 387px) / 2);
   top: 50%;
   transform: translateY(-50%);
+}
+
+div.special_right h1{
+  background-color: rgba(235, 144, 144, 0.7);
 }
 
 /* 訂閱 */
@@ -380,7 +388,7 @@ div.subscribe_type input{
 }
 
 div.subscribe_type input:focus{
-  border: 0 none;
+  outline: none;
 }
 
 div.subscribe_type button{

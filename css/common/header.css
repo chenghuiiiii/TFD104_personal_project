@@ -13,13 +13,14 @@ nav.nav{
   background-color: #C4C4C4;
   width: 1200px;
   margin: 0 auto;
-  height: 100px;
+  height: 80px;
   position: relative;
 }
 
 nav img.logo_img{
   /* border: 1px solid blue; */
-  width: 285px;
+  /* width: 183px; */
+  height: 70px;
   margin: 5px;
   display: inline-block;
 
@@ -43,9 +44,9 @@ nav ul.nav_list > li{
   font-size: 22px;
   width: 120px;
   margin: 0;
-  height: 100px;
+  height: 80px;
   text-align: center;
-  line-height: 100px;
+  line-height: 80px;
   font-weight: bold;
 }
 
