@@ -23,7 +23,6 @@ nav img.logo_img{
   height: 70px;
   margin: 5px;
   display: inline-block;
-
 }
 
 nav ul.nav_list{
@@ -52,7 +51,7 @@ nav ul.nav_list > li{
 
 div.kr_travel ul, div.uni_service ul{
   /* border: 3px solid white; */
-  border-top: 3px solid rgba(1, 1, 1, 0);;
+  border-top: 3px solid rgba(1, 1, 1, 0);
   list-style: none;
   text-align: center;
   width: 120px;
@@ -87,12 +86,6 @@ nav ul.nav_list > li > a{
 }
 
 /* hover效果、修正 */
-
-/* nav ul.nav_list > li:hover{
-  color: white;
-  text-shadow: 0 0 5px rgba(106, 106, 106, 0.8);
-} */
-
 nav ul.nav_list > li > a:hover{
   color: white;
   text-shadow: 0 0 5px rgba(106, 106, 106, 0.8);

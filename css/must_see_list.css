@@ -1,0 +1,133 @@
+@import "./common/common.css";
+@import "./common/header.css";
+@import "./common/footer.css";
+
+/* nav bar指定 */
+ul.kr_travel_list > li:last-child > a{
+  text-decoration: underline;
+}
+
+/* 標題大banner */
+div.banner_img{
+  /* border: 1px solid black; */
+  background-image: url(../images/must_see_list/banner.png);
+  height: 600px;
+  min-width: 1200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center, center;
+  position: relative;
+}
+
+h1.title{
+  /* border: 1px solid red; */
+  border-radius: 10px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 50px;
+  width: 790px;
+  height: 170px;
+  background-color: rgba(19, 54, 143, 0.7);
+  font-size: 64px;
+  text-align: center;
+  line-height: 170px;
+  color: white;
+}
+
+main{
+  /* border: 1px solid black; */
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* 小標題 */
+h2.sub_title{
+  /* border: 1px solid black; */
+  width: 790px;
+  margin: 120px auto;
+  position: relative;
+  font-size: 24px;
+}
+
+h2.sub_title::before{
+  content: "";
+  /* border: 1px solid red; */
+  display: inline-block;
+  position: absolute;
+  z-index: -1;
+  width: 250px;
+  height: 60px;
+  top: -10px;
+  left: -30px;
+  background-color: #EB9090;
+}
+
+/* 結構 */
+div.parent_container{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 150px;
+}
+
+/* section.left_side{
+  border: 1px solid black;
+  display: inline-block;
+} */
+
+/* section.right_side{
+  border: 1px solid black;
+  display: inline-block;
+} */
+
+/* 文章結構 */
+section div{
+  /* border: 1px solid red; */
+  position: relative;
+  overflow: hidden;
+  font-size: 0;
+  border-radius: 10px;
+}
+
+section.left_side div{
+  margin-bottom: 100px;
+}
+
+section.right_side div{
+  margin-top: 100px;
+}
+
+section a{
+  text-decoration: none;
+}
+
+section img{
+  width: 100%;
+}
+
+section div > h2{
+  /* border: 1px solid orange; */
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+  font-size: 30px;
+  width: 175px;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+}
+
+section.left_side h2{
+  background-color: rgba(160, 180, 231, 0.7);
+  font-weight: bolder;
+  color: black;
+}
+
+section.right_side h2{
+  background-color: rgba(235, 144, 144, 0.7);
+  font-weight: bolder;
+  color: black;
+}
