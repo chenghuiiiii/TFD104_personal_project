@@ -1,3 +1,146 @@
 @import "./common/common.css";
 @import "./common/header.css";
 @import "./common/footer.css";
+
+/* 標題大banner */
+div.banner_img{
+  /* border: 1px solid black; */
+  background-image: url(../images/routine/banner.png);
+  height: 600px;
+  min-width: 1200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center, center;
+}
+
+/* 結構 */
+main{
+  /* border: 1px solid black; */
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* 標題 */
+div.title{
+  /* border: 1px solid red; */
+  display: flex;
+  margin-top: 100px;
+}
+
+div.topic{
+  /* border: 1px solid black; */
+  flex-grow: 1;
+}
+
+div.topic h2{
+  /* border: 1px solid black; */
+  color: white;
+  background-color: #B31641;
+  font-size: 36px;
+  width: 380px;
+  text-align: center;
+  margin: 0;
+}
+
+div.topic p{
+  width: 585px;
+  text-align: center;
+}
+
+div.author p{
+  /* border: 1px solid red; */
+  display: inline-block;
+  vertical-align: bottom;
+  margin: 15px 0;
+  height: 80px;
+  line-height: 80px;
+  font-size: 18px;
+}
+
+div.author img{
+  /* border: 1px solid black; */
+  width: 80px;
+  display: inline-block;
+  vertical-align: bottom;
+  margin: 15px;
+}
+
+/* 景點內容 */
+div.parent_container{
+  border: 1px solid black;
+  width: 1200px;
+  background-image: url(../images/routine/arrow.png);
+  background-repeat: no-repeat;
+  background-position: 100px 20px;
+}
+
+div.spot{
+  border: 1px solid red;
+  display: flex;
+  width: 1000px;
+  margin: 100px auto;
+  font-size: 0;
+}
+
+/* 左邊 */
+div.pic{
+  position: relative;
+}
+
+div.pic p{
+  border: 1px solid red;
+  position: absolute;
+  color: black;
+  background-color: #C4C4C4;
+  font-size: 36px;
+  font-weight: bolder;
+  width: 183px;
+  text-align: center;
+  left: -20px;
+}
+
+/* 右邊 */
+div.describe{
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+div.text{
+  border: 1px solid green;
+  padding: 20px;
+}
+
+div.text > h3{
+  margin: 10px 0;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+div.text > p{
+  font-size: 16px;
+  line-height: 36px;
+}
+
+div.describe > a{
+  border: 1px solid orange;
+  width: 285px;
+  margin: 0 auto;
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  text-align: center;
+  padding: 5px 0;
+  background-color: #EB9090;
+}
+
+div.describe > a:hover{
+  background-color: #6183D8;
+}
+
+div.describe > a > img{
+  display: inline-block;
+  vertical-align: bottom;
+  margin-left: 10px;
+}

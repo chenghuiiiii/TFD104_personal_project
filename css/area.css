@@ -2,8 +2,79 @@
 @import "./common/header.css";
 @import "./common/footer.css";
 
-main{
-  border: 1px solid black;
-  background-image: url();
+/* 標題大banner */
+div.banner_img{
+  /* border: 1px solid black; */
+  background-image: url(../images/area/banner.png);
+  height: 480px;
+  min-width: 1200px;
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center, center;
+}
+
+main{
+  /* border: 1px solid black; */
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* 標題 */
+h2.title{
+  /* border: 1px solid blue; */
+  border-radius: 10px;
+  margin: 0;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  transform: translateY(-50%);
+  width: 388px;
+  height: 120px;
+  background-color: rgba(179, 22, 65, 0.7);
+  font-size: 40px;
+  text-align: center;
+  line-height: 120px;
+  color: white;
+}
+
+/* 地圖 */
+div.map{
+  border: 1px solid black;
+  /* background-image: url(../images/area/map.png);
+  background-repeat: no-repeat;
+  background-position: center 200px;
+  background-size: contain; */
+}
+
+/* 區域 */
+article{
+  border: 1px solid red;
+  display: flex;
+  font-size: 0px;
+  /* display: none; */
+}
+
+div.text{
+  padding: 25px 50px;
+}
+
+div.text > h3{
+  font-size: 24px;
+  font-weight: bolder;
+}
+
+div.text > p{
+  font-size: 16px;
+  line-height: 40px;
+}
+
+/* 單獨設定 */
+article.gangneug{
+
+}
+
+/* 按鈕 */
+button{
+  position: absolute;
 }
