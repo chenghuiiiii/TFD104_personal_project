@@ -15,7 +15,7 @@ div.banner_img{
 
 main{
   /* border: 1px solid black; */
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
   position: relative;
 }
@@ -41,10 +41,17 @@ h2.title{
 /* 地圖 */
 div.map{
   border: 1px solid black;
-  /* background-image: url(../images/area/map.png);
+  width: 100%;
+  /* height: 2000px;
+  background-image: url(../images/area/map.png);
   background-repeat: no-repeat;
-  background-position: center 200px;
-  background-size: contain; */
+  background-position: center ;
+  background-size: 100%; */
+}
+
+div.map > img{
+  width: 100%;
+  padding-top: 50px;
 }
 
 /* 區域 */
@@ -52,7 +59,9 @@ article{
   border: 1px solid red;
   display: flex;
   font-size: 0px;
-  /* display: none; */
+  display: none;
+  position: absolute;
+  z-index: 2;
 }
 
 div.text{
@@ -71,10 +80,104 @@ div.text > p{
 
 /* 單獨設定 */
 article.gangneug{
-
+  top: 20%;
+  background-color: #A0B4E7;
 }
+
+article.seoul{
+  top: 32%;
+  background-color: #EB9090;
+}
+
+article.daegu{
+  top: 52%;
+  background-color: #EB9090;
+}
+
+article.busan{
+  top: 64%;
+  background-color: #A0B4E7;
+}
+
+article.jeju{
+  top: 69%;
+  background-color: #A0B4E7;
+}
+
+article.-on{
+  display: flex;
+}
+
 
 /* 按鈕 */
 button{
   position: absolute;
+}
+
+button:hover{
+  cursor: pointer;
+  box-shadow: 0 0 8px #C4C4C4;
+}
+
+#gangneung:hover, #busan:hover, #jeju:hover{
+  background-color: #A0B4E7;
+}
+
+#seoul:hover, #daegu:hover{
+  background-color: #EB9090;
+}
+
+#gangneung{
+  top: 17%;
+  right: 12%;
+  width: 175px;
+  font-size: 24px;
+  font-weight: bold;
+  background-color: rgba(160, 180, 231, 0.7);
+  border-radius: 10px;
+  border: 2px solid #0E376F;
+}
+
+#seoul{
+  top: 29%;
+  left: 30%;
+  width: 175px;
+  font-size: 24px;
+  font-weight: bold;
+  background-color: rgba(235, 144, 144, 0.7);
+  border-radius: 10px;
+  border: 2px solid #B31641;
+}
+
+#daegu{
+  top: 49%;
+  right: 18%;
+  width: 175px;
+  font-size: 24px;
+  font-weight: bold;
+  background-color: rgba(235, 144, 144, 0.7);
+  border-radius: 10px;
+  border: 2px solid #B31641;
+}
+
+#busan{
+  top: 61%;
+  right: 10%;
+  width: 175px;
+  font-size: 24px;
+  font-weight: bold;
+  background-color: rgba(160, 180, 231, 0.7);
+  border-radius: 10px;
+  border: 2px solid #0E376F;
+}
+
+#jeju{
+  top: 92%;
+  left: 20%;
+  width: 175px;
+  font-size: 24px;
+  font-weight: bold;
+  background-color: rgba(160, 180, 231, 0.7);
+  border-radius: 10px;
+  border: 2px solid #0E376F;
 }
