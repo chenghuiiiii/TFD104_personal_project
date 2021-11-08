@@ -11,18 +11,23 @@ nav.nav{
   /* border: 1px solid red; */
   vertical-align: top;
   background-color: #C4C4C4;
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
   height: 80px;
   position: relative;
+  display: flex;
+}
+
+nav.nav > a{
+  flex-grow: 1;
+  align-self: flex-start;
 }
 
 nav img.logo_img{
   /* border: 1px solid blue; */
-  /* width: 183px; */
   height: 70px;
   margin: 5px;
-  display: inline-block;
+  /* display: inline-block; */
 }
 
 nav ul.nav_list{
@@ -30,15 +35,15 @@ nav ul.nav_list{
   list-style: none;
   margin: 0;
   padding: 0;
-  display: inline-block;
+  display: flex;
   vertical-align: top;
-  position: absolute;
+  /* position: absolute; */
   right: 0px;
 }
 
 nav ul.nav_list > li{
   /* border: 1px solid blue; */
-  display: inline-block;
+  /* display: inline-block; */
   vertical-align: top;
   font-size: 22px;
   width: 120px;
@@ -94,4 +99,26 @@ nav ul.nav_list > li > a:hover{
 div.kr_travel ul > li > a:hover, div.uni_service ul > li > a:hover{
   color: white;
   text-shadow: 0 0 5px rgba(106, 106, 106, 0.8);
+}
+
+/* nav ham效果 */
+div.nav_ham{
+  border: 1px solid black
+  width: 100%
+}
+
+#nav_ham{
+
+}
+
+/* RWD */
+@media all and (max-width: 767.98px){
+  header ul.nav_list{
+    display: none;
+  }
+}
+@media all and (min-width: 768px){
+  header div.nav_ham{
+    display: none;
+  }
 }

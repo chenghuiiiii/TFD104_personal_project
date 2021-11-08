@@ -1,15 +1,14 @@
 /* 最後 */
 footer{
   /* border: 1px solid black; */
-  min-width: 1200px;
-  height: 500px;
+  /* max-height: 500px; */
   background-color: #C4C4C4;
   padding: 30px 120px;
   margin-top: 100px;
 }
 
 footer > a{
-  /* border: 1px solid black; */
+  border: 1px solid black;
   display: block;
   text-decoration: none;
   text-align: center;
@@ -20,7 +19,7 @@ footer > a{
 }
 
 div.social_net{
-  /* border: 1px solid red; */
+  border: 1px solid red;
   width: 220px;
   margin: 20px auto;
   display: flex;
@@ -28,24 +27,24 @@ div.social_net{
 }
 
 div.social_net > a{
-  /* border: 1px solid blue; */
+  border: 1px solid blue;
   display: inline-block;
 }
 
 footer h2.footer_logo{
-  /* border: 1px solid black; */
+  border: 1px solid black;
   text-align: center;
   font-size: 30px;
   margin: 30px auto;
 }
 
 div.reference{
-  /* border: 1px solid black; */
+  border: 1px solid black;
   margin: 20px auto;
 }
 
 div.reference p{
-  /* border: 1px solid red; */
+  border: 1px solid red;
   text-align: center;
   font-size: 16px;
   margin: 5px;
