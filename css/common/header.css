@@ -102,14 +102,47 @@ div.kr_travel ul > li > a:hover, div.uni_service ul > li > a:hover{
 }
 
 /* nav ham效果 */
-div.nav_ham{
-  border: 1px solid black
-  width: 100%
-}
-
 #nav_ham{
-
+  padding: 15px;
+  display: block;
 }
+
+ul.nav_ham{
+  width: 100%
+  display: block;
+  position: absolute;
+  top: 80px;
+  right: 0;
+  background-color: white;
+  margin: 0;
+  list-style: none;
+  font-size: 18px;
+  font-weight: bolder;
+  padding: 40px;
+  /* display: none; */
+}
+
+ul.nav_ham a{
+  text-decoration: none;
+  color: black;
+}
+
+ul.nav_ham > li ul{
+  list-style: none;
+  font-size: 14px;
+  padding: 10px 20px;;
+}
+
+ul.nav_ham > li ul >li{
+  margin-bottom: 5px;
+}
+
+/* 漢堡顯示 */
+#nav_ham:hover ul.nav_ham{
+  display: block;
+}
+
+
 
 /* RWD */
 @media all and (max-width: 767.98px){
@@ -118,7 +151,7 @@ div.nav_ham{
   }
 }
 @media all and (min-width: 768px){
-  header div.nav_ham{
+  header div.ham{
     display: none;
   }
 }
