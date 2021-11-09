@@ -6,7 +6,7 @@ div.banner_img{
   /* border: 1px solid black; */
   background-image: url(../images/index/index_banner.png);
   height: 600px;
-  min-width: 1200px;
+  width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center, center;
@@ -15,7 +15,7 @@ div.banner_img{
 /* 主要內容們 */
 main{
   /* border: 1px solid black; */
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
   position: relative;
 }
@@ -455,4 +455,35 @@ div.subscribe_type button{
 div.subscribe_type button:hover{
   cursor: pointer;
   background-color: #A0B4E7;
+}
+
+/* RWD */
+@media all and (max-width: 575.98px){
+  div.my_div1{
+    width: 100%;
+  }
+}
+
+@media all and (min-width: 576px) and (max-width: 767.98px){
+  div.my_div1{
+    width: 540px;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 991.98px){
+  div.my_div1{
+    width: 720px;
+  }
+}
+
+@media all and (min-width: 992px) and (max-width: 1199.98px){
+  div.my_div1{
+    width: 960px;
+  }
+}
+
+@media all and (min-width: 1200px){
+  div.my_div1{
+    width: 1140px;
+  }
 }

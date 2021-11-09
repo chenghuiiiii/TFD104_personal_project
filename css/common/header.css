@@ -21,13 +21,13 @@ nav.nav{
 nav.nav > a{
   flex-grow: 1;
   align-self: flex-start;
+  /* margin-right: calc(100% - 238px - 360px); */
 }
 
 nav img.logo_img{
   /* border: 1px solid blue; */
   height: 70px;
   margin: 5px;
-  /* display: inline-block; */
 }
 
 nav ul.nav_list{
@@ -102,24 +102,31 @@ div.kr_travel ul > li > a:hover, div.uni_service ul > li > a:hover{
 }
 
 /* nav ham效果 */
-#nav_ham{
-  padding: 15px;
-  display: block;
+div.ham > label{
+  cursor: pointer;
+}
+
+div.ham > label img{
+  vertical-align: middle;
+  padding: 10px
+}
+
+input#nav_ham{
+  display: none;
 }
 
 ul.nav_ham{
-  width: 100%
-  display: block;
   position: absolute;
   top: 80px;
   right: 0;
-  background-color: white;
+  z-index: 20;
+  background-color: #C4C4C4;
   margin: 0;
   list-style: none;
   font-size: 18px;
   font-weight: bolder;
   padding: 40px;
-  /* display: none; */
+  display: block;
 }
 
 ul.nav_ham a{
@@ -138,7 +145,14 @@ ul.nav_ham > li ul >li{
 }
 
 /* 漢堡顯示 */
-#nav_ham:hover ul.nav_ham{
+/* div.ham:hover ul.nav_ham{
+  display: inline-block;
+} */
+ul.nav_ham{
+  display: none;
+}
+
+div.ham > input:checked + ul.nav_ham{
   display: block;
 }
 
