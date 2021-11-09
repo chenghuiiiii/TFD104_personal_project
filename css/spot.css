@@ -1,3 +1,113 @@
 @import "./common/common.css";
 @import "./common/header.css";
 @import "./common/footer.css";
+
+/* 標題大banner */
+div.banner_img{
+  /* border: 1px solid black; */
+  background-image: url(../images/spot/banner.png);
+  height: 600px;
+  min-width: 1200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center, center;
+}
+
+/* 結構 */
+main{
+  /* border: 1px solid black; */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* 標題 */
+div.title{
+  /* border: 1px solid red; */
+  display: flex;
+  margin-top: 100px;
+}
+
+div.topic{
+  /* border: 1px solid black; */
+  flex-grow: 1;
+}
+
+div.topic h2{
+  /* border: 1px solid black; */
+  color: white;
+  background-color: #0E376F;
+  font-size: 36px;
+  width: 380px;
+  text-align: center;
+  margin: 0;
+}
+
+div.tag_list{
+  /* border: 1px solid black; */
+  margin-left: 150px;
+}
+
+div.tag_list > a{
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  display: inline-block;
+  margin: 0 10px;
+}
+
+div.tag_list > a:hover{
+  text-decoration: underline;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+div.author p{
+  /* border: 1px solid red; */
+  display: inline-block;
+  vertical-align: bottom;
+  margin: 15px 0;
+  height: 80px;
+  line-height: 80px;
+  font-size: 18px;
+}
+
+div.author img{
+  /* border: 1px solid black; */
+  width: 80px;
+  display: inline-block;
+  vertical-align: bottom;
+  margin: 15px;
+}
+
+/* 內文 */
+article > div{
+  /* border: 1px solid black; */
+  width: 1000px;
+  margin: 40px auto;
+  font-size: 18px;
+}
+
+div.open > p:last-child{
+  font-weight: bold;
+}
+
+div.text, div.text_card{
+  display: flex;
+}
+
+div.text_inside{
+  padding: 20px;
+}
+
+article p{
+  line-height: 40px;
+}
+
+article > div > h3{
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+/* article img{
+  width: 386px;
+} */
