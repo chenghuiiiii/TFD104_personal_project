@@ -39,7 +39,7 @@ h2.slogan{
 
 /* 動畫圖片：還沒做！ */
 div.pic_animation{
-  /* border: 1px solid black; */
+  border: 1px solid black;
   height: 360px;
   position: relative;
 }
@@ -67,7 +67,7 @@ div.pic_animation{
 
 
 img.pic1{
-  width: 996px;
+  max-width: 996px;
   position: absolute;
   left: 0;
   animation-name: show;
@@ -79,7 +79,7 @@ img.pic1{
 }
 
 img.pic2{
-  width: 996px;
+  max-width: 996px;
   position: absolute;
   left: 100px;
   animation-name: show;
@@ -91,7 +91,7 @@ img.pic2{
 }
 
 img.pic3{
-  width: 996px;
+  max-width: 996px;
   position: absolute;
   right: 0;
   animation-name: show;
@@ -459,31 +459,57 @@ div.subscribe_type button:hover{
 
 /* RWD */
 @media all and (max-width: 575.98px){
-  div.my_div1{
-    width: 100%;
+  div.banner_img{
+    height: 300px;
   }
+  h2.slogan{
+    font-size: 14px;
+  }
+  img.pic1, img.pic2, img.pic3{
+    width: 100%
+  }
+
+
 }
 
 @media all and (min-width: 576px) and (max-width: 767.98px){
-  div.my_div1{
-    width: 540px;
+    /* width: 540px; */
+  div.banner_img{
+    height: 450px;
   }
+  h2.slogan{
+    font-size: 18px;
+  }
+  img.pic1, img.pic2, img.pic3{
+    width: 100%
+  }
+
+
+
 }
 
 @media all and (min-width: 768px) and (max-width: 991.98px){
-  div.my_div1{
-    width: 720px;
+    /* width: 720px; */
+  div.banner_img{
+    height: 450px;
   }
+  h2.slogan{
+    font-size: 18px;
+  }
+  img.pic1, img.pic2, img.pic3{
+    width: 100%
+  }
+
+
 }
 
 @media all and (min-width: 992px) and (max-width: 1199.98px){
-  div.my_div1{
-    width: 960px;
-  }
+    /* width: 960px; */
+    img.pic1, img.pic2, img.pic3{
+      width: 100%
+    }
 }
 
 @media all and (min-width: 1200px){
-  div.my_div1{
-    width: 1140px;
-  }
+    /* width: 1140px; */
 }
