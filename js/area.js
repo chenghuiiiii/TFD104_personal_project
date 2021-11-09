@@ -4,7 +4,10 @@
     btn[i].addEventListener('click', function(){
       let artc = document.getElementsByTagName('article');
       // console.log(artc);
-      if(artc[i].getAttribute("class") != "-on"){
+      // (artc[i].parentElement.querySelectorAll("article")).forEach(function(item, i){
+      //   item.classList.remove("-on");
+      // });
+      if(artc[i].getAttribute("class") === btn[i].getAttribute("id")){
         artc[i].classList.add("-on");
       }else{
         artc[i].classList.remove("-on");

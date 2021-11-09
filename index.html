@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>首頁 | UNI TRAVEL</title>
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="/vendors/slick.css">
   </head>
   <body>
     <header>
@@ -83,77 +84,69 @@
       </div>
       <div class="hot_spot">
         <h1 class="title">熱門景點</h1>
-        <ul class="hot_spot_list">
-          <li>
-            <div class="spot">
-              <a href="./spot.html">
-                <img src="./images/index/hot_spot1.png" alt="小王子村">
-                <div class="spot_name">
-                  甘川洞文化村
-                </div>
-              </a>
-            </div>
-          </li>
-          <li>
-            <div class="spot">
-              <a href="./spot.html">
-                <img src="./images/index/hot_spot2.png" alt="烏竹軒">
-                <div class="spot_name">
-                  烏竹軒
-                </div>
-              </a>
-            </div>
-          </li>
-          <li>
-            <div class="spot">
-              <a href="./spot.html">
-                <img src="./images/index/hot_spot3.png" alt="金光石紀念街">
-                <div class="spot_name">
-                  金光石紀念街
-                </div>
-              </a>
-            </div>
-          </li>
-          <li>
-            <div class="spot">
-              <a href="./spot.html">
-                <img src="./images/index/hot_spot4.png" alt="奶奶家辣炒年糕">
-                <div class="spot_name">
-                  奶奶家辣炒年糕
-                </div>
-              </a>
-            </div>
-          </li>
-        </ul>
+        <div class="spot_list">
+          <div class="spot">
+            <a href="./spot.html">
+              <img src="./images/index/hot_spot1.png" alt="小王子村">
+              <div class="spot_name">
+                甘川洞文化村
+              </div>
+            </a>
+          </div>
+          <div class="spot">
+            <a href="./spot.html">
+              <img src="./images/index/hot_spot2.png" alt="烏竹軒">
+              <div class="spot_name">
+                烏竹軒
+              </div>
+            </a>
+          </div>
+          <div class="spot">
+            <a href="./spot.html">
+              <img src="./images/index/hot_spot3.png" alt="金光石紀念街">
+              <div class="spot_name">
+                金光石紀念街
+              </div>
+            </a>
+          </div>
+          <div class="spot">
+            <a href="./spot.html">
+              <img src="./images/index/hot_spot4.png" alt="奶奶家辣炒年糕">
+              <div class="spot_name">
+                奶奶家辣炒年糕
+              </div>
+            </a>
+          </div>
+        </div>
       </div>
       <div class="must_see">
         <h1 class="title">旅遊必看</h1>
-        <ul class="must_see_list">
-          <li>
+        <div class="must_see_list">
+          <div class="must_see_article">
             <a href="./must_see.html">
               <img src="./images/index/transportation.png" alt="transportation">
               <div class="must_see_title">
                 交通
               </div>
             </a>
-          </li>
-          <li>
+          </div>
+          <div class="must_see_article">
             <a href="./must_see.html">
               <img src="./images/index/staying.png" alt="staying">
               <div class="must_see_title">
                 住宿
               </div>
             </a>
-          </li>
-          <li>
+          </div>
+          <div class="must_see_article">
             <a href="./must_see.html">
               <img src="./images/index/culture.png" alt="culture">
               <div class="must_see_title">
                 文化
               </div>
             </a>
-          </li>
-        </ul>
+          </div>
+        </div>
       </div>
       <div class="routine">
         <div class="routine_left">
@@ -189,7 +182,6 @@
         </div>
       </div>
     </main>
-
     <footer>
       <a href="contact.html">聯絡我們</a>
       <a href="subscribe_cancel.html">取消訂閱</a>
@@ -222,6 +214,8 @@
         </p>
       </div>
     </footer>
-
+    <script type="text/javascript" src="./vendors/jquery.min.js"></script>
+    <script type="text/javascript" src="./vendors/slick.min.js"></script>
+    <script src="./js/index.js"></script>
   </body>
 </html>
