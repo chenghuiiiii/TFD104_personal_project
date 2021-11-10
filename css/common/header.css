@@ -9,7 +9,7 @@ header{
 
 /* ==========主要nav========== */
 nav.nav{
-  border: 1px solid red;
+  /* border: 1px solid red; */
   vertical-align: top;
   /* background-color: #C4C4C4; */
   max-width: 1200px;
@@ -21,7 +21,7 @@ nav.nav{
 
 /* ==========logo img========== */
 nav.nav > div.logo_header{
-  border: 1px solid green;
+  /* border: 1px solid green; */
   /* dislay: block; */
   height: 100%;
   flex-grow: 1;
