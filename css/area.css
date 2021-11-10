@@ -57,9 +57,11 @@ div.map > img{
 /* 區域 */
 article{
   border: 1px solid red;
-  display: flex;
+  /* display: flex; */
   font-size: 0px;
   display: none;
+  /* opacity: 0;
+  transition: opacity 1s; */
   position: absolute;
   z-index: 2;
 }
@@ -106,12 +108,15 @@ article.jeju{
 
 article.-on{
   display: flex;
+  /* opacity: 1;
+  transition: opacity 1s; */
 }
 
 
 /* 按鈕 */
 button{
   position: absolute;
+  /* z-index: 5; */
 }
 
 button:hover{

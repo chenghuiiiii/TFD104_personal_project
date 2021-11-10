@@ -1,10 +1,9 @@
 /* 最後 */
 footer{
   /* border: 1px solid black; */
-  /* max-height: 500px; */
   width: 100%;
   background-color: #C4C4C4;
-  padding: 30px 120px;
+  padding: 30px 5%;
   margin-top: 100px;
 }
 
@@ -21,7 +20,7 @@ footer > a{
 
 div.social_net{
   /* border: 1px solid red; */
-  width: 220px;
+  width: 50%;
   margin: 20px auto;
   display: flex;
   justify-content: space-between;

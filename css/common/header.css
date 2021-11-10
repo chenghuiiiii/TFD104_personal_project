@@ -7,10 +7,11 @@ header{
   z-index: 20;
 }
 
+/* ==========主要nav========== */
 nav.nav{
-  /* border: 1px solid red; */
+  border: 1px solid red;
   vertical-align: top;
-  background-color: #C4C4C4;
+  /* background-color: #C4C4C4; */
   max-width: 1200px;
   margin: 0 auto;
   height: 80px;
@@ -18,33 +19,41 @@ nav.nav{
   display: flex;
 }
 
-nav.nav > a{
+/* ==========logo img========== */
+nav.nav > div.logo_header{
+  border: 1px solid green;
+  /* dislay: block; */
+  height: 100%;
   flex-grow: 1;
   align-self: flex-start;
-  /* margin-right: calc(100% - 238px - 360px); */
+}
+nav.nav > div.logo_header > a{
+  display: inline-block;
+  font-size: 0;
 }
 
-nav img.logo_img{
+nav.nav > div.logo_header > a > img.logo_img{
   /* border: 1px solid blue; */
-  height: 70px;
-  margin: 5px;
+  display: inline-block;
+  height: 80px;
+  padding: 5px;
+  margin: 0;
 }
+
+/* ========== 大nav ========== */
 
 nav ul.nav_list{
-  /* border: 1px solid blue; */
+  /* border: 2px solid red; */
+  width: auto;
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
-  vertical-align: top;
-  /* position: absolute; */
-  right: 0px;
+  position: relative;
 }
 
 nav ul.nav_list > li{
   /* border: 1px solid blue; */
-  /* display: inline-block; */
-  vertical-align: top;
   font-size: 22px;
   width: 120px;
   margin: 0;
@@ -54,7 +63,7 @@ nav ul.nav_list > li{
   font-weight: bold;
 }
 
-div.kr_travel ul, div.uni_service ul{
+ul.kr_travel_list, ul.uni_service_list{
   /* border: 3px solid white; */
   border-top: 3px solid rgba(1, 1, 1, 0);
   list-style: none;
@@ -64,108 +73,123 @@ div.kr_travel ul, div.uni_service ul{
   display: none;
 }
 
-ul.nav_list li:first-child:hover ul.kr_travel_list{
+ul.kr_travel_list > li > a, ul.uni_service_list > li > a{
   display: block;
-}
-
-ul.nav_list li:nth-child(2):hover ul.uni_service_list{
-  display: block;
-}
-
-div.kr_travel ul li, div.uni_service ul li{
+  font-size: 20px;
   background-color: #C4C4C4;
   width: 120px;
   height: 60px;
   line-height: 60px;
 }
 
-div.kr_travel ul > li > a, div.uni_service ul > li > a{
-  text-decoration: none;
-  color: black;
-  font-size: 20px;
-}
-
-nav ul.nav_list > li > a{
+nav ul.nav_list > li a{
   color: black;
   text-decoration: none;
 }
 
-/* hover效果、修正 */
-nav ul.nav_list > li > a:hover{
+
+
+
+
+/* ==========hover效果========== */
+nav ul.nav_list > li a:hover{
   color: white;
   text-shadow: 0 0 5px rgba(106, 106, 106, 0.8);
 }
 
-div.kr_travel ul > li > a:hover, div.uni_service ul > li > a:hover{
-  color: white;
-  text-shadow: 0 0 5px rgba(106, 106, 106, 0.8);
-}
-
-/* nav ham效果 */
-div.ham > label{
-  cursor: pointer;
-}
-
-div.ham > label img{
-  vertical-align: middle;
-  padding: 10px
-}
-
-input#nav_ham{
-  display: none;
-}
-
-ul.nav_ham{
-  position: absolute;
-  top: 80px;
-  right: 0;
-  z-index: 20;
+/* ==========nav ham效果========== */
+button.btn_ham{
+  border: none;
   background-color: #C4C4C4;
-  margin: 0;
-  list-style: none;
-  font-size: 18px;
-  font-weight: bolder;
-  padding: 40px;
-  display: block;
-}
-
-ul.nav_ham a{
-  text-decoration: none;
-  color: black;
-}
-
-ul.nav_ham > li ul{
-  list-style: none;
-  font-size: 14px;
-  padding: 10px 20px;;
-}
-
-ul.nav_ham > li ul >li{
-  margin-bottom: 5px;
-}
-
-/* 漢堡顯示 */
-/* div.ham:hover ul.nav_ham{
-  display: inline-block;
-} */
-ul.nav_ham{
+  cursor: pointer;
   display: none;
 }
-
-div.ham > input:checked + ul.nav_ham{
-  display: block;
-}
-
-
 
 /* RWD */
 @media all and (max-width: 767.98px){
-  header ul.nav_list{
-    display: none;
+  button.btn_ham{
+    display: block;
   }
+
+  nav ul.nav_list{
+    /* border: 2px solid red; */
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: rgba(196, 196, 196, 0.7);
+    position: absolute;
+    top: 80px;
+    right: 0;
+    z-index: 20;
+    transform: translateX(100%);
+    transition: transform 1s;
+  }
+
+  ul.nav_list.-open{
+    transform: translateX(0);
+    /* display: block; */
+  }
+
+  nav.nav ul.nav_list > li{
+    /* border: 2px solid blue; */
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    margin: 0;
+    text-align: center;
+    font-weight: bold;
+    height: auto;
+    line-height: 30px;
+    margin-top: 15px;
+    /* position: relative; */
+  }
+
+  nav.nav ul.nav_list > li:last-child{
+    margin-bottom: 15px;
+  }
+
+
+  ul.kr_travel_list, ul.uni_service_list{
+    /* border: 2px solid green; */
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 auto;
+    text-align: left;
+    position: static;
+  }
+
+  ul.kr_travel_list > li, ul.uni_service_list > li{
+    display: block;
+    width: 100%;
+  }
+
+
+  ul.kr_travel_list > li > a, ul.uni_service_list > li > a{
+    display: inline-block;
+    width: 100%;
+    font-size: 14px;
+    height: 20px;
+    line-height: 20px;
+    background-color: inherit;
+    /* position: relative; */
+  }
+
+
 }
 @media all and (min-width: 768px){
-  header div.ham{
+  button.btn_ham{
     display: none;
   }
+
+  ul.nav_list li:first-child:hover ul.kr_travel_list{
+    display: block;
+  }
+
+  ul.nav_list li:nth-child(2):hover ul.uni_service_list{
+    display: block;
+  }
+
+
 }
