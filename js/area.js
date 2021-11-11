@@ -1,5 +1,5 @@
 // function
-  let btn = document.getElementsByTagName('button');
+  let btn = document.getElementsByClassName('area_btn');
   for(let i = 0; i < btn.length; i++){
     btn[i].addEventListener('click', function(){
       let artc = document.getElementsByTagName('article');
