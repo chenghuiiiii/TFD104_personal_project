@@ -114,12 +114,12 @@ article.-on{
 
 
 /* 按鈕 */
-button{
+main button{
   position: absolute;
   /* z-index: 5; */
 }
 
-button:hover{
+main button:hover{
   cursor: pointer;
   box-shadow: 0 0 8px #C4C4C4;
 }

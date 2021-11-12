@@ -13,10 +13,151 @@ div.banner_img{
   background-position: center, center;
 }
 
-/* 主要內容們 */
+/* ========主要內容們=========== */
 main{
-  /* border: 1px solid black; */
+  border: 1px solid black;
   max-width: 1200px;
   margin: 0 auto;
   position: relative;
+}
+
+/* =====標題&scroll===== */
+main > img.scroll_sign{
+  border: 1px solid red;
+  width: 60px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -30px;
+}
+
+main > h2.slogan{
+  border: 1px solid red;
+  margin: 0;
+  padding: 100px;
+  text-align: center;
+  line-height: 40px;
+  font-weight: bolder;
+}
+
+/* ==========動畫圖片========= */
+div.pic_animation{
+  border: 1px solid black;
+  display: block;
+  max-height: 350px;
+  padding: 200px;
+  position: relative;
+  overflow: hidden;
+}
+/* 高度調整 */
+
+div.pic_animation img{
+  position: absolute;
+  top: 0;
+}
+
+@keyframes show {
+  0%{
+    opacity: 0
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes display_in{
+  0%{
+    opacity: 0
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+img.pic1{
+  max-width: 80%;
+  display: block;
+  position: absolute;
+  left: 0;
+  animation-name: show;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+}
+
+img.pic2{
+  max-width: 80%;
+  position: absolute;
+  left: 10%;
+  animation-name: show;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+  animation-delay: 2s;
+  animation-iteration-count: 1;
+}
+
+img.pic3{
+  max-width: 80%;
+  position: absolute;
+  right: 0;
+  animation-name: show;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+  animation-delay: 4s;
+  animation-iteration-count: 1;
+}
+
+img.pic4{
+  width: 100%;
+  left: 0;
+  transform: translateY(-25%);
+  animation-name: display_in;
+  animation-duration: 3s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: both;
+  animation-delay: 7s;
+  animation-iteration-count: 1;
+}
+
+/* ===========文字一============ */
+main div.pargh1{
+  border: 1px solid blue;
+  margin: 100px 0;
+  position: relative;
+}
+
+main div.pargh1 > h2{
+  border: 1px solid black;
+  text-align: center;
+  background-color: #0E376F;
+  color: white;
+  font-size: 24px;
+  font-weight: bolder;
+  border-radius: 10px;
+  height: 40px;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  padding: 0 50px;
+  transform: translate(-50%, -50%);
+}
+
+main div.pargh1 > p{
+  border: 1px solid blue;
+  text-align: center;
+  line-height: 40px;
+  background-color: rgba(97, 131, 216, 0.7);
+  font-size: 18px;
+  border-radius: 10px;
+  max-width: 996px;
+  margin: 0 auto;
+  padding: 40px;
 }
