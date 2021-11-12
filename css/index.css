@@ -13,6 +13,21 @@ div.banner_img{
   background-position: center, center;
 }
 
+@media all and (max-width: 767.98px){
+    /* width: 540px; */
+    div.banner_img{
+      height: 350px;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 1199.98px){
+    /* width: 960px; */
+    div.banner_img{
+      height: 450px;
+    }
+}
+
+
 /* ========主要內容們=========== */
 main{
   border: 1px solid black;
@@ -38,13 +53,51 @@ main > h2.slogan{
   text-align: center;
   line-height: 40px;
   font-weight: bolder;
+  letter-spacing: 1px
+}
+
+@media all and (max-width: 575.98px){
+  main > img.scroll_sign{
+    width: 30px;
+    top: -15px;
+  }
+  main > h2.slogan{
+    font-size: 14px;
+    line-height: 30px;
+    padding: 50px;
+  }
+}
+
+@media all and (min-width: 576px) and (max-width: 767.98px){
+    /* width: 540px; */
+    main > img.scroll_sign{
+      width: 30px;
+      top: -15px;
+    }
+    main > h2.slogan{
+      font-size: 16px;
+      padding: 60px;
+    }
+
+}
+
+@media all and (min-width: 768px) and (max-width: 1199.98px){
+    /* width: 960px; */
+    main > img.scroll_sign{
+      width: 40px;
+      top: -20px;
+    }
+    main > h2.slogan{
+      font-size: 18px;
+      padding: 80px;
+    }
+
 }
 
 /* ==========動畫圖片========= */
 div.pic_animation{
-  border: 1px solid black;
+  /* border: 1px solid black; */
   display: block;
-  max-height: 350px;
   padding: 200px;
   position: relative;
   overflow: hidden;
@@ -125,16 +178,43 @@ img.pic4{
   animation-delay: 7s;
   animation-iteration-count: 1;
 }
+@media all and (max-width: 359.98px){
+  div.pic_animation{
+    padding: 50px;
+  }
+}
+
+@media all and (min-width: 360px) and (max-width: 575.98px){
+  div.pic_animation{
+    padding: 100px;
+  }
+}
+
+@media all and (min-width: 576px) and (max-width: 767.98px){
+    /* width: 540px; */
+    div.pic_animation{
+      padding: 125px;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 991.98px){
+    /* width: 720px; */
+    div.pic_animation{
+      padding: 150px;
+    }
+}
+
+
 
 /* ===========文字一============ */
 main div.pargh1{
-  border: 1px solid blue;
-  margin: 100px 0;
+  /* border: 1px solid blue; */
+  margin: 120px 0;
   position: relative;
 }
 
 main div.pargh1 > h2{
-  border: 1px solid black;
+  /* border: 1px solid black; */
   text-align: center;
   background-color: #0E376F;
   color: white;
@@ -151,7 +231,7 @@ main div.pargh1 > h2{
 }
 
 main div.pargh1 > p{
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   text-align: center;
   line-height: 40px;
   background-color: rgba(97, 131, 216, 0.7);
@@ -160,4 +240,506 @@ main div.pargh1 > p{
   max-width: 996px;
   margin: 0 auto;
   padding: 40px;
+}
+
+@media all and (max-width: 359.98px){
+  main div.pargh1{
+    margin: 80px 0;
+  }
+  main div.pargh1 > p{
+    width: 95%;
+    font-size: 8px;
+    line-height: 20px;
+    padding: 20px 15px;
+  }
+
+  main div.pargh1 > h2{
+    font-size: 14px;
+    height: 30px;
+    width: 60%;
+    line-height: 30px;
+  }
+}
+
+@media all and (min-width: 360px) and (max-width: 575.98px){
+  main div.pargh1 > p{
+    width: 95%;
+    font-size: 10px;
+    line-height: 24px;
+    padding: 20px 15px;
+  }
+
+  main div.pargh1 > h2{
+    font-size: 20px;
+    height: 30px;
+    width: 60%;
+    line-height: 30px;
+  }
+
+}
+
+@media all and (min-width: 576px) and (max-width: 767.98px){
+    /* width: 540px; */
+    main div.pargh1 > p{
+      width: 95%;
+      font-size: 14px;
+      line-height: 30px;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 991.98px){
+    /* width: 720px; */
+    main div.pargh1 > p{
+      width: 95%;
+      font-size: 16px;
+      line-height: 35px;
+    }
+
+}
+
+/* ==========熱門景點============= */
+main div.hot_spot{
+  /* border: 1px solid blue; */
+  margin-top: 150px;
+}
+
+main div.hot_spot > h1.title{
+  /* border: 1px solid black; */
+  width: 50%;
+  height: auto;
+  text-align: center;
+  margin: 20px auto;
+  position: relative;
+  font-size: 36px;
+  z-index: 1;
+}
+
+main div.hot_spot > h1.title::after{
+  content: "";
+  /* border: 1px solid red; */
+  display: block;
+  width: 150px;
+  height: 90%;
+  background: #EB9090;
+  position: absolute;
+  left: 32%;
+  top: 0;
+  transform: translateY(-30%);
+  z-index: -1;
+}
+
+@media all and (max-width: 359.98px){
+  main div.hot_spot{
+    margin-top: 100px;
+  }
+  main div.hot_spot > h1.title{
+    font-size: 18px;
+  }
+  main div.hot_spot > h1.title::after{
+    width: 80px;
+    left: 15%;
+  }
+
+}
+
+@media all and (min-width: 360px) and (max-width: 575.98px){
+   /* width: 320px */
+   main div.hot_spot{
+     margin-top: 100px;
+   }
+   main div.hot_spot > h1.title{
+     font-size: 20px;
+   }
+   main div.hot_spot > h1.title::after{
+     width: 80px;
+     left: 20%;
+   }
+
+}
+
+@media all and (min-width: 576px) and (max-width: 767.98px){
+    /* width: 540px; */
+    main div.hot_spot{
+      margin-top: 100px;
+    }
+    main div.hot_spot > h1.title{
+      font-size: 20px;
+    }
+    main div.hot_spot > h1.title::after{
+      width: 80px;
+      left: 30%;
+    }
+
+}
+
+@media all and (min-width: 768px) and (max-width: 991.98px){
+    /* width: 720px; */
+    main div.hot_spot > h1.title{
+      font-size: 24px;
+    }
+    main div.hot_spot > h1.title::after{
+      width: 80px;
+    }
+
+}
+
+
+/* ==========輪播景點========== */
+main div.spot_list{
+  /* border: 1px solid green; */
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+}
+
+div.spot{
+  text-decoration: none;
+  position: relative;
+  border: 3px solid white;
+}
+
+div.spot > a{
+  text-decoration: none;
+}
+
+div.spot > a > img{
+  width: 100%;
+}
+
+div.spot_name{
+  /* border: 1px solid black; */
+  color: white;
+  text-align: center;
+  background-color: rgba(106, 106, 106, 0.7);
+  font-weight: bolder;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 20%;
+  margin: auto 0;
+}
+div.spot_name p{
+  font-size: 16px;
+  letter-spacing: 3px;
+  margin: 5% 0;
+}
+
+@media all and (max-width: 359.98px){
+  div.spot_name p{
+    margin: 0;
+    font-size: 5px;
+    letter-spacing: 0px;
+  }
+
+}
+
+@media all and (min-width: 360px) and (max-width: 575.98px){
+   /* width: 320px */
+}
+
+@media all and (min-width: 576px) and (max-width: 767.98px){
+    /* width: 540px; */
+}
+
+@media all and (min-width: 768px) and (max-width: 991.98px){
+    /* width: 720px; */
+}
+
+@media all and (min-width: 992px) and (max-width: 1199.98px){
+    /* width: 960px; */
+}
+
+
+/* ==============旅遊必看============= */
+main div.must_see{
+  border: 1px solid blue;
+  margin-top: 150px;
+}
+
+main div.must_see > h1.title{
+  /* border: 1px solid black; */
+  width: 50%;
+  height: auto;
+  text-align: center;
+  margin: 20px auto;
+  position: relative;
+  font-size: 36px;
+  z-index: 1;
+}
+
+main div.must_see > h1.title::after{
+  content: "";
+  /* border: 1px solid blue; */
+  display: block;
+  width: 150px;
+  height: 90%;
+  background: #EB9090;
+  position: absolute;
+  left: 32%;
+  top: 0;
+  transform: translateY(-30%);
+  z-index: -1;
+}
+
+@media all and (max-width: 359.98px){
+  main div.must_see{
+    margin-top: 100px;
+  }
+  main div.must_see > h1.title{
+    font-size: 18px;
+  }
+  main div.must_see > h1.title::after{
+    width: 80px;
+    left: 15%;
+  }
+
+}
+
+@media all and (min-width: 360px) and (max-width: 575.98px){
+   /* width: 320px */
+   main div.must_see{
+     margin-top: 100px;
+   }
+   main div.must_see > h1.title{
+     font-size: 20px;
+   }
+   main div.must_see > h1.title::after{
+     width: 80px;
+     left: 20%;
+   }
+
+}
+
+@media all and (min-width: 576px) and (max-width: 767.98px){
+    /* width: 540px; */
+    main div.must_see{
+      margin-top: 100px;
+    }
+    main div.must_see > h1.title{
+      font-size: 20px;
+    }
+    main div.must_see > h1.title::after{
+      width: 80px;
+      left: 30%;
+    }
+
+}
+
+@media all and (min-width: 768px) and (max-width: 991.98px){
+    /* width: 720px; */
+    main div.must_see > h1.title{
+      font-size: 24px;
+    }
+    main div.must_see > h1.title::after{
+      width: 80px;
+    }
+
+}
+
+/* ======PIC========== */
+main div.must_see_list{
+  /* border: 1px solid green; */
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+}
+div.must_see_article{
+  text-decoration: none;
+  position: relative;
+  border: 3px solid white;
+}
+div.must_see_article > a{
+  text-decoration: none;
+}
+
+div.must_see_article > a > img{
+  width: 100%;
+  margin: 0;
+}
+
+main div.must_see_article div.must_see_title{
+  /* border: 1px solid red; */
+  font-size: 24px;
+  font-weight: bolder;
+  text-align: center;
+  color: white;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+div.must_see_title > p{
+  letter-spacing: 3px;
+}
+
+/* ===========ROUTINE============ */
+main div.special, div.routine{
+  /* border: 1px solid black; */
+  max-width: 996px;
+  margin: 150px auto;
+  font-size: 0;
+  display: flex;
+}
+
+div.special_left, div.routine_left{
+  /* border: 1px solid red; */
+  max-height: 300px;
+}
+
+div.special_left h2, div.routine_left h2{
+  /* border: 1px solid black; */
+  font-size: 24px;
+  text-align: center;
+  height: 90px;
+  line-height: 90px;
+  font-weight: bolder;
+  position: relative;
+}
+
+div.special_left h2::before, div.routine_left h2::before{
+  content: "";
+  /* border: 1px solid blue; */
+  width: 100px;
+  height: 30px;
+  display: inline-block;
+  position: absolute;
+  background-color: #91A8E3;
+  z-index: -1;
+  left: 135px;
+  top: 15px;
+}
+
+div.special_left p, div.routine_left p{
+  /* border: 1px solid black; */
+  font-size: 18px;
+  margin: 0 35px;
+  line-height: 30px;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+div.special_right, div.routine_right{
+  border: 1px solid green;
+  width: 590px;
+  position: relative;
+}
+
+div.special_right img, div.routine_right img{
+  height: 100%;
+}
+
+div.special_right h1, div.routine_right h1{
+  /* border: 1px solid blue; */
+  border-radius: 10px;
+  background-color: rgba(145, 168, 227, 0.7);
+  font-size: 24px;
+  color: white;
+  font-weight: bolder;
+  position: absolute;
+  text-align: center;
+  width: 387px;
+  height: 70px;
+  line-height: 70px;
+  margin: 0 calc((100% - 387px) / 2);
+  top: 50%;
+  transform: translateY(-50%);
+}
+/* ===========訂閱============== */
+div.subscribe{
+  /* border: 1px solid black; */
+  max-width: 996px;
+  margin: 200px auto;
+}
+
+div.subscribe p{
+  /* border: 1px solid red; */
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  height: 80px;
+  line-height: 80px;
+  width: 590px;
+  margin: 0 auto;
+  position: relative;
+}
+
+div.subscribe p::after{
+  content: "";
+  display: inline-block;
+  /* border: 1px solid red; */
+  width: 470px;
+  height: 25px;
+  position: absolute;
+  z-index: -1;
+  background-color: #EB9090;
+  right: 40px;
+  top: 50%;
+}
+
+div.subscribe_type{
+  border: 1px solid black;
+  margin: 100px 0;
+  height: 50px;
+}
+
+div.subscribe_type form{
+  display: flex;
+  padding: 5px;
+}
+
+div.subscribe_type input{
+  border: 0 none;
+  border-bottom: 3px solid black;
+  max-width: 792px;
+  height: 25px;
+  font-size: 24px;
+  flex-grow: 1;
+  vertical-align: baseline;
+  margin: auto;
+}
+
+div.subscribe_type input:focus{
+  outline: none;
+}
+
+div.subscribe_type button{
+  width: 183px;
+  margin-left: 10px;
+  padding: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #EB9090;
+  border: 0 none;
+  border-radius: 5px;
+  vertical-align: baseline;
+}
+
+div.subscribe_type button:hover{
+  cursor: pointer;
+  background-color: #A0B4E7;
+}
+
+/* RWD */
+@media all and (max-width: 359.98px){
+}
+
+@media all and (min-width: 360px) and (max-width: 575.98px){
+   /* width: 320px */
+}
+
+@media all and (min-width: 576px) and (max-width: 767.98px){
+    /* width: 540px; */
+}
+
+@media all and (min-width: 768px) and (max-width: 991.98px){
+    /* width: 720px; */
+}
+
+@media all and (min-width: 992px) and (max-width: 1199.98px){
+    /* width: 960px; */
+}
+
+@media all and (min-width: 1200px){
+    /* width: 1140px; */
 }

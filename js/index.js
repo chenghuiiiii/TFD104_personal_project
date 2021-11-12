@@ -10,7 +10,11 @@
 //   });
 // });
 
-$('.must_see_list').slick();
+$('.must_see_list').slick({
+  infinite: true,
+  slidesToShow: 2,
+  slidesToScroll: 1
+});
 
 $('.spot_list').slick({
   infinite: true,
