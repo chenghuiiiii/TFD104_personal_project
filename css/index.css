@@ -957,8 +957,17 @@ div.subscribe_type button:hover{
      margin: 50px auto;
      width: 95%;
    }
+   div.subscribe_type form{
+     flex-direction: column;
+   }
+
    div.subscribe_type button{
+     font-size: 12px;
+     margin: 20px auto;
+   }
+   div.subscribe_type input{
      font-size: 14px;
+     width: 80%;
    }
 
 }
