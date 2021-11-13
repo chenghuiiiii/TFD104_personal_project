@@ -30,7 +30,7 @@ div.banner_img{
 
 /* ========主要內容們=========== */
 main{
-  border: 1px solid black;
+  /* border: 1px solid black; */
   max-width: 1200px;
   margin: 0 auto;
   position: relative;
@@ -38,7 +38,7 @@ main{
 
 /* =====標題&scroll===== */
 main > img.scroll_sign{
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 60px;
   position: absolute;
   left: 50%;
@@ -47,7 +47,7 @@ main > img.scroll_sign{
 }
 
 main > h2.slogan{
-  border: 1px solid red;
+  /* border: 1px solid red; */
   margin: 0;
   padding: 100px;
   text-align: center;
@@ -426,33 +426,46 @@ div.spot_name p{
 
 @media all and (max-width: 359.98px){
   div.spot_name p{
-    margin: 0;
     font-size: 5px;
     letter-spacing: 0px;
+    line-height: 10px
   }
 
 }
 
 @media all and (min-width: 360px) and (max-width: 575.98px){
    /* width: 320px */
+   div.spot_name p{
+     font-size: 8px;
+     letter-spacing: 0px;
+     line-height: 10px
+   }
+
 }
 
 @media all and (min-width: 576px) and (max-width: 767.98px){
     /* width: 540px; */
+    div.spot_name p{
+      font-size: 10px;
+      letter-spacing: 0px;
+    }
+
 }
 
 @media all and (min-width: 768px) and (max-width: 991.98px){
     /* width: 720px; */
+    div.spot_name p{
+      font-size: 14px;
+      letter-spacing: 1px;
+    }
+
 }
 
-@media all and (min-width: 992px) and (max-width: 1199.98px){
-    /* width: 960px; */
-}
 
 
 /* ==============旅遊必看============= */
 main div.must_see{
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   margin-top: 150px;
 }
 
@@ -519,7 +532,7 @@ main div.must_see > h1.title::after{
       font-size: 20px;
     }
     main div.must_see > h1.title::after{
-      width: 80px;
+      width: 100px;
       left: 30%;
     }
 
@@ -531,7 +544,7 @@ main div.must_see > h1.title::after{
       font-size: 24px;
     }
     main div.must_see > h1.title::after{
-      width: 80px;
+      width: 200px;
     }
 
 }
@@ -559,7 +572,6 @@ div.must_see_article > a > img{
 
 main div.must_see_article div.must_see_title{
   /* border: 1px solid red; */
-  font-size: 24px;
   font-weight: bolder;
   text-align: center;
   color: white;
@@ -571,7 +583,45 @@ main div.must_see_article div.must_see_title{
 }
 div.must_see_title > p{
   letter-spacing: 3px;
+  font-size: 24px;
 }
+
+
+@media all and (max-width: 359.98px){
+  div.must_see_title > p{
+    font-size: 10px;
+    letter-spacing: 0px;
+  }
+
+}
+
+@media all and (min-width: 360px) and (max-width: 575.98px){
+   /* width: 320px */
+   div.must_see_title > p{
+     font-size: 14px;
+     letter-spacing: 0px;
+   }
+
+}
+
+@media all and (min-width: 576px) and (max-width: 767.98px){
+    /* width: 540px; */
+    div.must_see_title > p{
+      font-size: 16px;
+      letter-spacing: 1px;
+    }
+
+}
+
+@media all and (min-width: 768px) and (max-width: 991.98px){
+    /* width: 720px; */
+    div.must_see_title > p{
+      font-size: 18px;
+      letter-spacing: 1px;
+    }
+
+}
+
 
 /* ===========ROUTINE============ */
 main div.special, div.routine{
@@ -606,27 +656,28 @@ div.special_left h2::before, div.routine_left h2::before{
   position: absolute;
   background-color: #91A8E3;
   z-index: -1;
-  left: 135px;
-  top: 15px;
+  left: 130px;
+  bottom: 45%;
 }
 
 div.special_left p, div.routine_left p{
   /* border: 1px solid black; */
   font-size: 18px;
-  margin: 0 35px;
+  margin: 0 8%;
   line-height: 30px;
   letter-spacing: 1px;
   font-weight: bold;
 }
 
 div.special_right, div.routine_right{
-  border: 1px solid green;
-  width: 590px;
+  /* border: 1px solid green; */
+  max-width: 590px;
   position: relative;
 }
 
 div.special_right img, div.routine_right img{
-  height: 100%;
+  /* height: 100%; */
+  display: block;
 }
 
 div.special_right h1, div.routine_right h1{
@@ -638,18 +689,155 @@ div.special_right h1, div.routine_right h1{
   font-weight: bolder;
   position: absolute;
   text-align: center;
-  width: 387px;
-  height: 70px;
-  line-height: 70px;
-  margin: 0 calc((100% - 387px) / 2);
+  width: 80%;
+  height: 35%;
+  line-height: 105px;
+  margin: 0 10%;
   top: 50%;
   transform: translateY(-50%);
 }
+
+@media all and (max-width: 359.98px){
+  main div.special, div.routine{
+    flex-direction: column;
+    margin: 80px auto;
+  }
+  div.special_left h2, div.routine_left h2{
+    font-size: 18px;
+    margin: 0;
+    height: 60px;
+    line-height: 70px;
+  }
+  div.special_left h2::before, div.routine_left h2::before{
+    width: 80px;
+    height: 40%;
+    left: 33%;
+    bottom: 35%;
+  }
+  div.special_left p, div.routine_left p{
+    font-size: 10px;
+    line-height: 18px;
+    margin-bottom: 15px;
+  }
+
+  div.special_right img, div.routine_right img{
+    width: 100%;
+    height: auto;
+  }
+  div.special_right h1, div.routine_right h1{
+    font-size: 16px;
+    width: 80%;
+    line-height: 55px;
+  }
+
+
+}
+
+@media all and (min-width: 360px) and (max-width: 575.98px){
+   /* width: 320px */
+   main div.special, div.routine{
+     flex-direction: column;
+     margin: 100px 0;
+   }
+   div.special_left h2, div.routine_left h2{
+     font-size: 18px;
+     margin: 0;
+     height: 60px;
+     line-height: 70px;
+   }
+   div.special_left h2::before, div.routine_left h2::before{
+     width: 100px;
+     height: 40%;
+     left: 40%;
+     bottom: 35%;
+   }
+   div.special_left p, div.routine_left p{
+     font-size: 12px;
+     line-height: 20px;
+     margin-bottom: 20px;
+   }
+
+   div.special_right img, div.routine_right img{
+     width: 100%;
+     /* height: auto; */
+   }
+   div.special_right h1, div.routine_right h1{
+     font-size: 20px;
+     width: 80%;
+     line-height: 5rem;
+   }
+
+}
+
+@media all and (min-width: 576px) and (max-width: 767.98px){
+    /* width: 540px; */
+    div.special_left h2, div.routine_left h2{
+      font-size: 18px;
+      margin: 0;
+      height: 60px;
+      line-height: 70px;
+    }
+    div.special_left h2::before, div.routine_left h2::before{
+      width: 80px;
+      height: 40%;
+      left: 35%;
+      bottom: 35%;
+    }
+    div.special_left p, div.routine_left p{
+      font-size: 14px;
+      line-height: 24px;
+      margin-top: 10px;;
+    }
+
+    div.special_right, div.routine_right{
+      min-width: 70%;
+      overflow: hidden;
+    }
+    div.special_right h1, div.routine_right h1{
+      font-size: 20px;
+      width: 80%;
+      line-height: 6rem;
+    }
+
+}
+
+@media all and (min-width: 768px) and (max-width: 991.98px){
+    /* width: 720px; */
+    div.special_left h2, div.routine_left h2{
+      font-size: 20px;
+      height: 60px;
+      line-height: 70px;
+    }
+    div.special_left h2::before, div.routine_left h2::before{
+      width: 80px;
+      height: 40%;
+      left: 35%;
+      bottom: 35%;
+    }
+    div.special_left p, div.routine_left p{
+      font-size: 16px;
+      line-height: 30px;
+    }
+
+    div.special_right, div.routine_right{
+      min-width: 60%;
+      overflow: hidden;
+    }
+    div.special_right h1, div.routine_right h1{
+      font-size: 24px;
+      width: 80%;
+      line-height: 6rem;
+    }
+}
+
+
+
 /* ===========訂閱============== */
 div.subscribe{
   /* border: 1px solid black; */
   max-width: 996px;
-  margin: 200px auto;
+  margin: 150px auto;
+  margin-bottom: 0;
 }
 
 div.subscribe p{
@@ -678,9 +866,8 @@ div.subscribe p::after{
 }
 
 div.subscribe_type{
-  border: 1px solid black;
-  margin: 100px 0;
-  height: 50px;
+  /* border: 1px solid black; */
+  margin: 100px auto;
 }
 
 div.subscribe_type form{
@@ -718,6 +905,91 @@ div.subscribe_type button{
 div.subscribe_type button:hover{
   cursor: pointer;
   background-color: #A0B4E7;
+}
+@media all and (max-width: 359.98px){
+  div.subscribe{
+    margin: 80px auto;
+    margin-bottom: 0;
+  }
+  div.subscribe p{
+    font-size: 14px;
+    width: 100%;
+  }
+  div.subscribe p::after{
+    width: ;
+  }
+
+  div.subscribe_type{
+    margin: 50px auto;
+    width: 95%;
+  }
+  div.subscribe_type form{
+    flex-direction: column;
+  }
+
+  div.subscribe_type button{
+    font-size: 12px;
+    margin: 20px auto;
+  }
+  div.subscribe_type input{
+    font-size: 14px;
+    width: 80%;
+  }
+
+}
+
+@media all and (min-width: 360px) and (max-width: 575.98px){
+   /* width: 320px */
+   div.subscribe{
+     margin: 80px auto;
+     margin-bottom: 0;
+   }
+   div.subscribe p{
+     font-size: 16px;
+     width: 100%;
+   }
+   div.subscribe p::after{
+     width: 320px;
+     left: 10%;
+   }
+
+   div.subscribe_type{
+     margin: 50px auto;
+     width: 95%;
+   }
+   div.subscribe_type button{
+     font-size: 14px;
+   }
+
+}
+
+@media all and (min-width: 576px) and (max-width: 767.98px){
+    /* width: 540px; */
+    div.subscribe{
+      margin: 100px auto;
+      margin-bottom: 0;
+    }
+    div.subscribe p{
+      font-size: 20px;
+      max-width: 540px;
+    }
+    div.subscribe p::after{
+      width: 400px;
+      left: 100px;
+    }
+
+    div.subscribe_type{
+      margin: 50px auto;
+      width: 95%;
+    }
+
+}
+@media all and (min-width: 768px) and (max-width: 1199.98px){
+    /* width: 720px; */
+    div.subscribe_type{
+      margin: 50px auto;
+      width: 95%;
+    }
 }
 
 /* RWD */

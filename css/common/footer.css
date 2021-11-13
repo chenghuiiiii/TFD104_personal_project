@@ -20,7 +20,7 @@ footer > a{
 
 div.social_net{
   /* border: 1px solid red; */
-  width: 50%;
+  width: 200px;
   margin: 20px auto;
   display: flex;
   justify-content: space-between;
@@ -55,8 +55,29 @@ div.reference p a{
   color: black;
   font-weight: bolder;
 }
+@media all and (max-width: 359.98px){
+  footer{
+    margin-top: 50px;
+  }
+  footer > a{
+    font-size: 14px;
+  }
+  footer h2.footer_logo{
+    font-size: 18px;
+  }
+  div.reference p{
+    font-size: 10px;
+  }
+}
 
-@media all and (max-width: 767.98px){
+
+@media all and (min-width: 360px) and (max-width: 767.98px){
+  footer{
+    margin-top: 80px;
+  }
+  footer > a{
+    font-size: 16px;
+  }
   footer h2.footer_logo{
     font-size: 20px;
   }
