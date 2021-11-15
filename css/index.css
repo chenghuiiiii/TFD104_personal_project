@@ -313,16 +313,20 @@ main div.hot_spot > h1.title{
   font-size: 36px;
   z-index: 1;
 }
+main div.hot_spot > h1.title > span{
+  /* border: 1px solid red; */
+  position: relative;
+}
 
-main div.hot_spot > h1.title::after{
+main div.hot_spot > h1.title > span::after{
   content: "";
   /* border: 1px solid red; */
   display: block;
-  width: 150px;
+  width: 148px;
   height: 90%;
   background: #EB9090;
   position: absolute;
-  left: 32%;
+  left: -20px;
   top: 0;
   transform: translateY(-30%);
   z-index: -1;
@@ -335,9 +339,9 @@ main div.hot_spot > h1.title::after{
   main div.hot_spot > h1.title{
     font-size: 18px;
   }
-  main div.hot_spot > h1.title::after{
-    width: 80px;
-    left: 15%;
+  main div.hot_spot > h1.title > span::after{
+    width: 72px;
+    left: -14px;
   }
 
 }
@@ -350,9 +354,9 @@ main div.hot_spot > h1.title::after{
    main div.hot_spot > h1.title{
      font-size: 20px;
    }
-   main div.hot_spot > h1.title::after{
+   main div.hot_spot > h1.title > span::after{
      width: 80px;
-     left: 20%;
+     left: -16px;
    }
 
 }
@@ -365,9 +369,9 @@ main div.hot_spot > h1.title::after{
     main div.hot_spot > h1.title{
       font-size: 20px;
     }
-    main div.hot_spot > h1.title::after{
+    main div.hot_spot > h1.title > span::after{
       width: 80px;
-      left: 30%;
+      left: -16px;
     }
 
 }
@@ -377,8 +381,9 @@ main div.hot_spot > h1.title::after{
     main div.hot_spot > h1.title{
       font-size: 24px;
     }
-    main div.hot_spot > h1.title::after{
-      width: 80px;
+    main div.hot_spot > h1.title > span::after{
+      width: 96px;
+      left: -18px;
     }
 
 }
@@ -480,7 +485,11 @@ main div.must_see > h1.title{
   z-index: 1;
 }
 
-main div.must_see > h1.title::after{
+main div.must_see > h1.title > span{
+  position: relative;
+}
+
+main div.must_see > h1.title > span::after{
   content: "";
   /* border: 1px solid blue; */
   display: block;
@@ -488,7 +497,7 @@ main div.must_see > h1.title::after{
   height: 90%;
   background: #EB9090;
   position: absolute;
-  left: 32%;
+  left: -20px;
   top: 0;
   transform: translateY(-30%);
   z-index: -1;
@@ -501,9 +510,9 @@ main div.must_see > h1.title::after{
   main div.must_see > h1.title{
     font-size: 18px;
   }
-  main div.must_see > h1.title::after{
-    width: 80px;
-    left: 15%;
+  main div.must_see > h1.title > span::after{
+    width: 72px;
+    left: -14px;
   }
 
 }
@@ -516,9 +525,9 @@ main div.must_see > h1.title::after{
    main div.must_see > h1.title{
      font-size: 20px;
    }
-   main div.must_see > h1.title::after{
+   main div.must_see > h1.title > span::after{
      width: 80px;
-     left: 20%;
+     left: -16px;
    }
 
 }
@@ -531,9 +540,9 @@ main div.must_see > h1.title::after{
     main div.must_see > h1.title{
       font-size: 20px;
     }
-    main div.must_see > h1.title::after{
-      width: 100px;
-      left: 30%;
+    main div.must_see > h1.title > span::after{
+      width: 80px;
+      left: -16px;
     }
 
 }
@@ -543,8 +552,9 @@ main div.must_see > h1.title::after{
     main div.must_see > h1.title{
       font-size: 24px;
     }
-    main div.must_see > h1.title::after{
-      width: 200px;
+    main div.must_see > h1.title > span::after{
+      width: 96px;
+      left: -18px;
     }
 
 }
@@ -647,17 +657,22 @@ div.special_left h2, div.routine_left h2{
   position: relative;
 }
 
-div.special_left h2::before, div.routine_left h2::before{
+div.special_left h2 > span, div.routine_left h2 > span{
+  /* border: 1px solid blue; */
+  position: relative;
+}
+
+div.special_left h2 > span::before, div.routine_left h2 > span::before{
   content: "";
   /* border: 1px solid blue; */
   width: 100px;
-  height: 30px;
+  height: 90%;
   display: inline-block;
   position: absolute;
   background-color: #91A8E3;
   z-index: -1;
-  left: 130px;
-  bottom: 45%;
+  left: -18px;
+  top: -25%;
 }
 
 div.special_left p, div.routine_left p{
@@ -708,11 +723,9 @@ div.special_right h1, div.routine_right h1{
     height: 60px;
     line-height: 70px;
   }
-  div.special_left h2::before, div.routine_left h2::before{
-    width: 80px;
-    height: 40%;
-    left: 33%;
-    bottom: 35%;
+  div.special_left h2 > span::before, div.routine_left h2 > span::before{
+    width: 75px;
+    left: -14px;
   }
   div.special_left p, div.routine_left p{
     font-size: 10px;
@@ -745,11 +758,9 @@ div.special_right h1, div.routine_right h1{
      height: 60px;
      line-height: 70px;
    }
-   div.special_left h2::before, div.routine_left h2::before{
-     width: 100px;
-     height: 40%;
-     left: 40%;
-     bottom: 35%;
+   div.special_left h2 > span::before, div.routine_left h2 > span::before{
+     width: 75px;
+     left: -14px;
    }
    div.special_left p, div.routine_left p{
      font-size: 12px;
@@ -762,7 +773,7 @@ div.special_right h1, div.routine_right h1{
      /* height: auto; */
    }
    div.special_right h1, div.routine_right h1{
-     font-size: 20px;
+     font-size: 24px;
      width: 80%;
      line-height: 5rem;
    }
@@ -777,11 +788,9 @@ div.special_right h1, div.routine_right h1{
       height: 60px;
       line-height: 70px;
     }
-    div.special_left h2::before, div.routine_left h2::before{
-      width: 80px;
-      height: 40%;
-      left: 35%;
-      bottom: 35%;
+    div.special_left h2 > span::before, div.routine_left h2 > span::before{
+      width: 75px;
+      left: -14px;
     }
     div.special_left p, div.routine_left p{
       font-size: 14px;
@@ -808,11 +817,9 @@ div.special_right h1, div.routine_right h1{
       height: 60px;
       line-height: 70px;
     }
-    div.special_left h2::before, div.routine_left h2::before{
+    div.special_left h2 > span::before, div.routine_left h2 > span::before{
       width: 80px;
-      height: 40%;
-      left: 35%;
-      bottom: 35%;
+      left: -16px;
     }
     div.special_left p, div.routine_left p{
       font-size: 16px;
@@ -852,16 +859,21 @@ div.subscribe p{
   position: relative;
 }
 
-div.subscribe p::after{
+div.subscribe p > span{
+  border: 1px solid red;
+  position: relative;
+}
+
+div.subscribe p > span::after{
   content: "";
   display: inline-block;
   /* border: 1px solid red; */
-  width: 470px;
-  height: 25px;
+  width: 490px;
+  height: 90%;
   position: absolute;
   z-index: -1;
   background-color: #EB9090;
-  right: 40px;
+  right: -20px;
   top: 50%;
 }
 
@@ -915,8 +927,9 @@ div.subscribe_type button:hover{
     font-size: 14px;
     width: 100%;
   }
-  div.subscribe p::after{
-    width: ;
+  div.subscribe p > span::after{
+    width: 275px;
+    right: -10px;
   }
 
   div.subscribe_type{
@@ -948,9 +961,9 @@ div.subscribe_type button:hover{
      font-size: 16px;
      width: 100%;
    }
-   div.subscribe p::after{
-     width: 320px;
-     left: 10%;
+   div.subscribe p > span::after{
+     width: 330px;
+     right: -16px;
    }
 
    div.subscribe_type{
@@ -982,9 +995,9 @@ div.subscribe_type button:hover{
       font-size: 20px;
       max-width: 540px;
     }
-    div.subscribe p::after{
-      width: 400px;
-      left: 100px;
+    div.subscribe p > span::after{
+      width: 410px;
+      right: -18px;
     }
 
     div.subscribe_type{

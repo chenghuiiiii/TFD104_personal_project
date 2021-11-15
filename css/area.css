@@ -17,7 +17,20 @@ div.banner_img{
   background-size: cover;
   background-position: center, center;
 }
-@media all and (max-width: 767.98px){
+@media all and (max-width: 359.98px){
+  div.banner_img{
+    height: 270px;
+  }
+}
+
+@media all and (min-width: 360px) and (max-width: 575.98px){
+  div.banner_img{
+    height: 300px;
+  }
+}
+
+
+@media all and (min-width: 576px) and (max-width: 767.98px){
     /* width: 540px; */
     div.banner_img{
       height: 350px;
@@ -264,10 +277,13 @@ article.jeju h3{
   }
   article div.picture a{
     width: 33.33%;
+    height: 40px;
     overflow: hidden;
   }
   article div.picture img{
-    transform: translateX(-30%) ;
+    transform: translateX(-30%);
+    height: 100%;
+    opacity: 1;
   }
 
 
@@ -295,10 +311,12 @@ article.jeju h3{
    }
    article div.picture a{
      width: 33.33%;
+     height: 80px;
      overflow: hidden;
    }
    article div.picture img{
-     transform: translateX(-30%) ;
+     transform: translateX(-30%);
+     height: 100%;
    }
 
 
@@ -325,10 +343,12 @@ article.jeju h3{
     }
     article div.picture a{
       width: 33.33%;
+      height: 90px;
       overflow: hidden;
     }
     article div.picture img{
-      transform: translateX(-30%) ;
+      transform: translateX(-30%);
+      height: 100%;
     }
 
 
