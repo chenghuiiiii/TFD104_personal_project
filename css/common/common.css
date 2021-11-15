@@ -7,3 +7,27 @@ body{
   font-family: 'Noto Sans TC', sans-serif;
   background-color: #FDFDFD;
 }
+
+/* RWD */
+@media all and (max-width: 359.98px){
+}
+
+@media all and (min-width: 360px) and (max-width: 575.98px){
+   /* width: 320px */
+}
+
+@media all and (min-width: 576px) and (max-width: 767.98px){
+    /* width: 540px; */
+}
+
+@media all and (min-width: 768px) and (max-width: 991.98px){
+    /* width: 720px; */
+}
+
+@media all and (min-width: 992px) and (max-width: 1199.98px){
+    /* width: 960px; */
+}
+
+@media all and (min-width: 1200px){
+    /* width: 1140px; */
+}
