@@ -320,7 +320,6 @@ main div.hot_spot > h1.title > span{
 
 main div.hot_spot > h1.title > span::after{
   content: "";
-  /* border: 1px solid red; */
   display: block;
   width: 148px;
   height: 90%;
@@ -486,12 +485,12 @@ main div.must_see > h1.title{
 }
 
 main div.must_see > h1.title > span{
+  /* border: 1px solid blue; */
   position: relative;
 }
 
 main div.must_see > h1.title > span::after{
   content: "";
-  /* border: 1px solid blue; */
   display: block;
   width: 150px;
   height: 90%;
@@ -664,7 +663,6 @@ div.special_left h2 > span, div.routine_left h2 > span{
 
 div.special_left h2 > span::before, div.routine_left h2 > span::before{
   content: "";
-  /* border: 1px solid blue; */
   width: 100px;
   height: 90%;
   display: inline-block;
@@ -867,7 +865,6 @@ div.subscribe p > span{
 div.subscribe p > span::after{
   content: "";
   display: inline-block;
-  /* border: 1px solid red; */
   width: 490px;
   height: 90%;
   position: absolute;

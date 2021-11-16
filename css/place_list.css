@@ -12,17 +12,45 @@ div.banner_img{
   /* border: 1px solid black; */
   background-image: url(../images/place_list/banner.png);
   height: 480px;
-  min-width: 1200px;
+  width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center, center;
 }
 
+@media all and (max-width: 359.98px){
+  div.banner_img{
+    height: 270px;
+  }
+}
+
+@media all and (min-width: 360px) and (max-width: 575.98px){
+  div.banner_img{
+    height: 300px;
+  }
+}
+
+
+@media all and (min-width: 576px) and (max-width: 767.98px){
+    /* width: 540px; */
+    div.banner_img{
+      height: 350px;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 1199.98px){
+    /* width: 960px; */
+    div.banner_img{
+      height: 450px;
+    }
+}
+
+
 
 /* 版面 */
 div.parent_container{
   /* border: 1px solid black; */
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
   font-size: 0;
   position: relative;
@@ -50,8 +78,9 @@ aside.choice{
   /* border: 1px solid black; */
   display: inline-block;
   vertical-align: top;
-  width: calc(100% - 893px - 27px - 30px);
-  margin-left: 30px;
+  width: calc(100% - 893px - 27px - 35px);
+  height: 80vh;
+  margin-left: 35px;
   font-size: 1rem;
   background-color: #C4C4C4;
   position: sticky;
@@ -69,10 +98,99 @@ main{
   position: relative;
 }
 
+@media all and (max-width: 359.98px){
+  h2.title{
+    width: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 60px;
+    line-height: 60px;
+    font-size: 28px;
+  }
+
+}
+
+@media all and (min-width: 360px) and (max-width: 575.98px){
+   /* width: 320px */
+   h2.title{
+     width: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     height: 80px;
+     line-height: 80px;
+     font-size: 32px;
+   }
+
+}
+
+@media all and (min-width: 576px) and (max-width: 767.98px){
+    /* width: 540px; */
+    h2.title{
+      width: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      height: 100px;
+      line-height: 100px;
+      font-size: 36px;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 991.98px){
+    /* width: 720px; */
+    h2.title{
+      font-size: 36px;
+      width: 300px;
+      height: 100px;
+      line-height: 100px;
+      left: 5%;
+    }
+
+    aside.choice{
+      /* display: none; */
+      border: 1px solid red;
+      position: fixed;
+      z-index: 3;
+      display: block;
+      margin: 0;
+      width: 20%;
+      top: 50px;
+      transform: translateX(-100%);
+    }
+
+    main{
+      width: 90%;
+      margin: 0 5%;
+    }
+
+}
+
+@media all and (min-width: 992px) and (max-width: 1199.98px){
+    /* width: 960px; */
+    h2.title{
+      width: 350px;
+      left: 5%;
+    }
+    aside.choice{
+      width: 18%;
+      margin-left: 5%;
+    }
+
+    main{
+      width: 70%;
+      margin-left: 7%;
+    }
+
+}
+
+
 /* 勾選區 */
+aside > span{
+  font-size: 18px;
+}
 aside > div{
   /* border: 1px solid blue; */
-  margin-bottom: 50px;
+  margin-bottom: 2%;
+  height: 40%;
 }
 
 aside > div > h3{
@@ -80,11 +198,11 @@ aside > div > h3{
   border-radius: 10px;
   margin: 0 auto;
   width: 175px;
-  height: 70px;
-  line-height: 70px;
+  height: 50px;
+  line-height: 50px;
   text-align: center;
   font-size: 20px;
-  margin-top: 30px;
+  margin-top: 5%;
 }
 
 h3.category{
@@ -99,8 +217,8 @@ div.check{
   /* border: 1px solid green; */
   display: block;
   font-size: 18px;
-  padding-left: 100px;
-  margin-bottom: 15px;
+  padding-left: 30%;
+  margin: 2px 10%;
 }
 
 /* 景點列表 */

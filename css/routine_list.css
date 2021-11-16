@@ -20,13 +20,14 @@ div.banner_img{
   z-index: -1;
 }
 
+
 h1.title{
   /* border: 1px solid red; */
   border-radius: 10px;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 50px;
+  bottom: 5%;
   width: 790px;
   height: 170px;
   background-color: rgba(179, 22, 65, 0.7);
