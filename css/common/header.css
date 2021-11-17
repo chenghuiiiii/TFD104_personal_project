@@ -63,6 +63,10 @@ nav ul.nav_list > li{
   line-height: 80px;
   font-weight: bold;
 }
+nav ul.nav_list > li > input{
+  display: none;
+}
+
 
 ul.kr_travel_list, ul.uni_service_list{
   /* border: 3px solid white; */
@@ -146,8 +150,6 @@ button.btn_ham{
   nav.nav ul.nav_list > li:last-child{
     margin-bottom: 15px;
   }
-
-
   ul.kr_travel_list, ul.uni_service_list{
     /* border: 2px solid green; */
     width: 50%;
@@ -157,13 +159,10 @@ button.btn_ham{
     text-align: left;
     position: static;
   }
-
   ul.kr_travel_list > li, ul.uni_service_list > li{
     display: block;
     width: 100%;
   }
-
-
   ul.kr_travel_list > li > a, ul.uni_service_list > li > a{
     display: inline-block;
     width: 100%;
@@ -173,21 +172,24 @@ button.btn_ham{
     background-color: inherit;
     /* position: relative; */
   }
-
-
 }
 @media all and (min-width: 768px){
   button.btn_ham{
     display: none;
   }
-
   ul.nav_list li:first-child:hover ul.kr_travel_list{
     display: block;
   }
-
   ul.nav_list li:nth-child(2):hover ul.uni_service_list{
     display: block;
   }
+  #travel:checked +ul.kr_travel_list{
+    display: block;
+  }
+  #service:checked +ul.uni_service_list{
+    display: block;
+  }
+
 
 
 }
