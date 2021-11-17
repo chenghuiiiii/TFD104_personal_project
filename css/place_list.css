@@ -55,6 +55,7 @@ div.parent_container{
   font-size: 0;
   position: relative;
   padding-top: 150px;
+  /* display: flex; */
 }
 
 h2.title{
@@ -79,13 +80,26 @@ aside.choice{
   display: inline-block;
   vertical-align: top;
   width: calc(100% - 893px - 27px - 35px);
-  height: 80vh;
   margin-left: 35px;
   font-size: 1rem;
   background-color: #C4C4C4;
   position: sticky;
   top: 50px;
   border-radius: 10px;
+}
+aside.choice > span{
+  position: absolute;
+  font-size: 24px;
+  font-weight: bold;
+  left: 100%;
+  top: 10%;
+  background-color: #C4C4C4;
+  padding: 3%;
+  border-radius: 0 5px 5px 0;
+  display: none;
+}
+aside.choice > span:hover{
+  cursor: pointer;
 }
 
 main{
@@ -107,79 +121,146 @@ main{
     line-height: 60px;
     font-size: 28px;
   }
+  aside.choice{
+    /* border: 1px solid red; */
+    position: fixed;
+    z-index: 3;
+    display: block;
+    margin: 0;
+    width: 40%;
+    top: 10%;
+    transform: translateX(-100%);
+    transition: all 1s;
+  }
+  aside.choice > span{
+    display: block;
+    font-size: 18px;
+  }
+  aside.-open{
+    transform: none;
+  }
+  main{
+    width: 90%;
+    margin: 0 5%;
+  }
+
 
 }
 
 @media all and (min-width: 360px) and (max-width: 575.98px){
-   /* width: 320px */
-   h2.title{
-     width: 50%;
-     left: 50%;
-     transform: translate(-50%, -50%);
-     height: 80px;
-     line-height: 80px;
-     font-size: 32px;
-   }
-
+  /* width: 320px */
+  h2.title{
+    width: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 80px;
+    line-height: 80px;
+    font-size: 32px;
+  }
+  aside.choice{
+    /* border: 1px solid red; */
+    position: fixed;
+    z-index: 3;
+    display: block;
+    margin: 0;
+    width: 40%;
+    top: 10%;
+    transform: translateX(-100%);
+    transition: all 1s;
+  }
+  aside.choice > span{
+    display: block;
+    font-size: 20px;
+  }
+  aside.-open{
+    transform: none;
+  }
+  main{
+    width: 90%;
+    margin: 0 5%;
+  }
 }
 
 @media all and (min-width: 576px) and (max-width: 767.98px){
-    /* width: 540px; */
-    h2.title{
-      width: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      height: 100px;
-      line-height: 100px;
-      font-size: 36px;
-    }
+  /* width: 540px; */
+  h2.title{
+    width: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100px;
+    line-height: 100px;
+    font-size: 36px;
+  }
+  aside.choice{
+    /* border: 1px solid red; */
+    position: fixed;
+    z-index: 3;
+    display: block;
+    margin: 0;
+    width: 40%;
+    top: 10%;
+    transform: translateX(-100%);
+    transition: all 1s;
+  }
+  aside.choice > span{
+    display: block;
+    font-size: 20px;
+  }
+  aside.-open{
+    transform: none;
+  }
+  main{
+    width: 90%;
+    margin: 0 5%;
+  }
 }
 
 @media all and (min-width: 768px) and (max-width: 991.98px){
-    /* width: 720px; */
-    h2.title{
-      font-size: 36px;
-      width: 300px;
-      height: 100px;
-      line-height: 100px;
-      left: 5%;
-    }
-
-    aside.choice{
-      /* display: none; */
-      border: 1px solid red;
-      position: fixed;
-      z-index: 3;
-      display: block;
-      margin: 0;
-      width: 20%;
-      top: 50px;
-      transform: translateX(-100%);
-    }
-
-    main{
-      width: 90%;
-      margin: 0 5%;
-    }
-
+  /* width: 720px; */
+  h2.title{
+    font-size: 36px;
+    width: 300px;
+    height: 100px;
+    line-height: 100px;
+    left: 5%;
+  }
+  aside.choice{
+    /* border: 1px solid red; */
+    position: fixed;
+    z-index: 3;
+    display: block;
+    margin: 0;
+    width: 40%;
+    top: 10%;
+    transform: translateX(-100%);
+    transition: all 1s;
+  }
+  aside.choice > span{
+    display: block;
+  }
+  aside.-open{
+    transform: none;
+  }
+  main{
+    width: 90%;
+    margin: 0 5%;
+  }
 }
 
 @media all and (min-width: 992px) and (max-width: 1199.98px){
-    /* width: 960px; */
-    h2.title{
-      width: 350px;
-      left: 5%;
-    }
-    aside.choice{
-      width: 18%;
-      margin-left: 5%;
-    }
-
-    main{
-      width: 70%;
-      margin-left: 7%;
-    }
-
+  /* width: 960px; */
+  h2.title{
+    width: 350px;
+    left: 5%;
+  }
+  aside.choice{
+    width: 18%;
+    margin-left: 5%;
+  }
+  main{
+    width: 70%;
+    margin-left: 7%;
+  }
 }
 
 
@@ -189,20 +270,18 @@ aside > span{
 }
 aside > div{
   /* border: 1px solid blue; */
-  margin-bottom: 2%;
-  height: 40%;
+  margin: 10% auto;
+  height: 30%;
 }
 
 aside > div > h3{
   /* border: 1px solid black; */
   border-radius: 10px;
-  margin: 0 auto;
-  width: 175px;
-  height: 50px;
-  line-height: 50px;
+  margin: 2% auto;
+  width: 80%;
   text-align: center;
   font-size: 20px;
-  margin-top: 5%;
+  margin: 5% auto;
 }
 
 h3.category{
@@ -212,13 +291,17 @@ h3.category{
 h3.area{
   background-color: #EB9090;
 }
-
-div.check{
+aside > div > ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+li.check{
   /* border: 1px solid green; */
   display: block;
   font-size: 18px;
-  padding-left: 30%;
-  margin: 2px 10%;
+  padding-left: 20%;
+  margin: 5px 10%;
 }
 
 /* 景點列表 */
@@ -234,28 +317,33 @@ ul.spot_list{
   margin-bottom: 70px;
 }
 
-ul.hot_spot_list > li{
+ul.spot_list > li{
   /* border: 1px solid red; */
-  display: inline-block;
-  /* margin: 0 calc((100% - 893) / 8);
-  寬度調整先用flex處理*/
+  width: 30%;
 }
 
 div.spot{
   text-decoration: none;
   display: block;
-  width: 250px;
+  max-width: 250px;
   position: relative;
 }
 
 div.spot > a{
   text-decoration: none;
+  display: block;
+  overflow: hidden;
 }
 
 div.spot > a > img{
   width: 100%;
   display: inline-block;
+  transition: all .3s;
 }
+div.spot > a > img:hover{
+  transform: scale(110%, 110%);
+}
+
 
 div.spot_name{
   /* border: 1px solid black; */
@@ -270,29 +358,56 @@ div.spot_name{
   bottom: 0;
   height: 70px;
 }
+div.spot_name > p{
+  margin-top: 5%;
+  margin-bottom: 0;
+  text-shadow: 0 0 3px white;
+}
+@media all and (max-width: 359.98px){
+  ul.spot_list{
+    margin-bottom: 20px;
+  }
+
+}
+
+@media all and (min-width: 360px) and (max-width: 575.98px){
+   /* width: 320px */
+   ul.spot_list{
+     margin-bottom: 30px;
+   }
+
+}
+
+@media all and (min-width: 576px) and (max-width: 767.98px){
+    /* width: 540px; */
+    ul.spot_list{
+      margin-bottom: 50px;
+    }
+
+}
+
 
 /* 頁數列 */
 div.page_number{
   /* border: 1px solid black; */
   display: inline-block;
   font-size: 0;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  width: 60%;
+  margin: 0 20%;
 }
 
 ul.pages{
   /* border: 1px solid black; */
   list-style: none;
   padding: 0;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
   font-size: 0;
 }
 
 ul.pages li{
   /* border: 1px solid black; */
   margin: 0;
-  display: inline-block;
 }
 
 ul.pages > li > a{
