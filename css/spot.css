@@ -7,11 +7,24 @@ div.banner_img{
   /* border: 1px solid black; */
   background-image: url(../images/spot/banner.png);
   height: 600px;
-  min-width: 1200px;
+  width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center, center;
 }
+@media all and (max-width: 767.98px){
+    /* width: 540px; */
+    div.banner_img{
+      height: 350px;
+    }
+}
+@media all and (min-width: 768px) and (max-width: 1199.98px){
+    /* width: 960px; */
+    div.banner_img{
+      height: 450px;
+    }
+}
+
 
 /* 結構 */
 main{
@@ -24,6 +37,8 @@ main{
 div.title{
   /* border: 1px solid red; */
   display: flex;
+  width: 92%;
+  margin: 0 4%;
   margin-top: 100px;
 }
 
@@ -31,7 +46,6 @@ div.topic{
   /* border: 1px solid black; */
   flex-grow: 1;
 }
-
 div.topic h2{
   /* border: 1px solid black; */
   color: white;
@@ -40,13 +54,12 @@ div.topic h2{
   width: 380px;
   text-align: center;
   margin: 0;
+  padding: 2% auto;
 }
-
 div.tag_list{
   /* border: 1px solid black; */
   margin-left: 150px;
 }
-
 div.tag_list > a{
   text-decoration: none;
   color: black;
@@ -54,7 +67,6 @@ div.tag_list > a{
   display: inline-block;
   margin: 0 10px;
 }
-
 div.tag_list > a:hover{
   text-decoration: underline;
   font-weight: bolder;
@@ -70,7 +82,6 @@ div.author p{
   line-height: 80px;
   font-size: 18px;
 }
-
 div.author img{
   /* border: 1px solid black; */
   width: 80px;
@@ -78,36 +89,191 @@ div.author img{
   vertical-align: bottom;
   margin: 15px;
 }
+@media all and (max-width: 359.98px){
+  div.title{
+    margin-top: 40px;
+    flex-direction: column;
+  }
+  div.topic{
+    margin-bottom: 2%;
+  }
+  div.topic h2{
+    font-size: 18px;
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 8px;
+    border-radius: 5px;
+  }
+  div.tag_list, div.author{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+  div.tag_list a{
+    font-size: 12px;
+  }
+  div.author p{
+    font-size: 10px;
+    margin: 0;
+    height: 30px;
+    line-height: 30px;
+  }
+  div.author img{
+    width: 30px;
+    margin: 0;
+  }
+
+}
+
+@media all and (min-width: 360px) and (max-width: 575.98px){
+  /* width: 320px */
+  div.title{
+    margin-top: 50px;
+    flex-direction: column;
+  }
+  div.topic{
+    margin-bottom: 2%;
+  }
+  div.topic h2{
+    font-size: 24px;
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 8px;
+    border-radius: 5px;
+  }
+  div.tag_list, div.author{
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+  div.tag_list a{
+    font-size: 14px;
+  }
+  div.author p{
+    font-size: 12px;
+    margin: 0;
+    height: 40px;
+    line-height: 40px;
+  }
+  div.author img{
+    width: 40px;
+    margin: 0;
+  }
+}
+
+@media all and (min-width: 576px) and (max-width: 767.98px){
+  /* width: 540px; */
+  div.title{
+    margin-top: 60px;
+    flex-direction: column;
+  }
+  div.topic{
+    margin-bottom: 2%;
+  }
+  div.topic h2{
+    font-size: 32px;
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  div.tag_list, div.author{
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+  div.tag_list a{
+    font-size: 18px;
+  }
+  div.author p{
+    font-size: 16px;
+    margin: 0;
+    height: auto;
+  }
+  div.author img{
+    width: 50px;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 991.98px){
+  /* width: 720px; */
+  div.title{
+    margin-top: 80px;
+  }
+
+}
+
+@media all and (min-width: 992px) and (max-width: 1199.98px){
+  /* width: 960px; */
+  div.title{
+    margin-top: 100px;
+  }
+}
+
+
 
 /* 內文 */
 article > div{
   /* border: 1px solid black; */
-  width: 1000px;
+  width: 90%;
   margin: 40px auto;
   font-size: 18px;
 }
-
+article > div > div.picture{
+  max-width: 40%;
+}
+article > div > div.picture img{
+  width: 100%;
+  height: auto;
+  margin: auto 0;
+}
 div.open > p:last-child{
   font-weight: bold;
 }
-
-div.text, div.text_card{
+div.text{
   display: flex;
 }
-
 div.text_inside{
   padding: 20px;
 }
-
 article p{
   line-height: 40px;
+  font: 16px;
 }
-
 article > div > h3{
   font-weight: bolder;
   font-size: 20px;
 }
+@media all and (max-width: 359.98px){
+  div.text{
+    flex-direction: column;
+  }
 
-/* article img{
-  width: 386px;
-} */
+}
+
+@media all and (min-width: 360px) and (max-width: 575.98px){
+   /* width: 320px */
+   div.text{
+     flex-direction: column;
+   }
+
+}
+
+@media all and (min-width: 576px) and (max-width: 767.98px){
+    /* width: 540px; */
+    div.text{
+      flex-direction: column;
+    }
+
+}
+
+@media all and (min-width: 768px) and (max-width: 991.98px){
+    /* width: 720px; */
+}
+
+@media all and (min-width: 992px) and (max-width: 1199.98px){
+    /* width: 960px; */
+}
