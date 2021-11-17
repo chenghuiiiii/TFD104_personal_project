@@ -130,6 +130,7 @@ h2.title{
 div.map{
   /* border: 1px solid black; */
   width: 100%;
+  padding-right: 5px;
 }
 
 div.map > img{
@@ -188,7 +189,7 @@ article div.picture{
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  min-width: 40%;
+  min-width: 50%;
 }
 
 article div.picture a{
@@ -197,6 +198,7 @@ article div.picture a{
 
 article div.picture img{
   opacity: .8;
+  height: 100%;
   transition-property: all;
   transition-duration: .5s;
   position: relative;
@@ -221,7 +223,8 @@ article.gangneung{
   background-color: #A0B4E7;
 }
 article.gangneung h3{
-  text-shadow: 2px 2px 2px #0E376F;
+  color: #0E376F;
+  text-shadow: 2px 2px 2px white;
 }
 
 article.seoul{
@@ -229,7 +232,8 @@ article.seoul{
   background-color: #EB9090;
 }
 article.seoul h3{
-  text-shadow: 2px 2px 2px #B31641;
+  color: #B31641;
+  text-shadow: 2px 2px 2px white;
 }
 
 article.daegu{
@@ -237,7 +241,8 @@ article.daegu{
   background-color: #EB9090;
 }
 article.daegu h3{
-  text-shadow: 2px 2px 2px #B31641;
+  color: #B31641;
+  text-shadow: 2px 2px 2px white;
 }
 
 article.busan{
@@ -245,7 +250,8 @@ article.busan{
   background-color: #A0B4E7;
 }
 article.busan h3{
-  text-shadow: 2px 2px 2px #0E376F;
+  color: #0E376F;
+  text-shadow: 2px 2px 2px white;
 }
 
 article.jeju{
@@ -253,7 +259,8 @@ article.jeju{
   background-color: #A0B4E7;
 }
 article.jeju h3{
-  text-shadow: 2px 2px 2px #0E376F;
+  color: #0E376F;
+  text-shadow: 2px 2px 2px white;
 }
 
 @media all and (max-width: 359.98px){

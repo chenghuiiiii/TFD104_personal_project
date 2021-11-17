@@ -84,6 +84,7 @@ h2.sub_title > span::before{
   h2.sub_title{
     font-size: 16px;
     width: 90%;
+    margin: 60px 0;
     margin-left: 10%;
   }
   h2.sub_title > span::before{
@@ -111,6 +112,7 @@ h2.sub_title > span::before{
     h2.sub_title{
       font-size: 18px;
       width: 90%;
+      margin: 80px 0;
       margin-left: 10%;
     }
     h2.sub_title > span::before{
@@ -137,6 +139,7 @@ h2.sub_title > span::before{
     h2.sub_title{
       font-size: 20px;
       width: 90%;
+      margin: 100px 0;
       margin-left: 10%;
     }
     h2.sub_title > span::before{
@@ -189,7 +192,8 @@ section div > h2{
   padding: 10px;
   text-align: center;
   font-size: 30px;
-  width: 175px;
+  width: 50%;
+  text-shadow: 0 0 10px white;
   position: absolute;
   z-index: 1;
   top: 50%;
@@ -210,35 +214,97 @@ section.right_side h2{
   color: black;
 }
 @media all and (max-width: 359.98px){
+  div.parent_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 150px;
+  }
+  section.left_side > div{
+    margin: 5px 0;
+  }
+  section.right_side > div{
+    margin: 5px 0;
+  }
+  section div > h2{
+    font-size: 18px;
+  }
+
 
 }
 
 @media all and (min-width: 360px) and (max-width: 575.98px){
-   /* width: 320px */
+  /* width: 320px */
+  div.parent_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 150px;
+  }
+  section.left_side div{
+    margin-bottom: 20px;
+  }
+  section.right_side div{
+    margin-top: 20px;
+  }
+  section div > h2{
+    font-size: 20px;
+  }
+
 
 }
 
 @media all and (min-width: 576px) and (max-width: 767.98px){
-    /* width: 540px; */
-    section.left_side, section.right_side{
-      width: 48%;
-      margin: 0 1%;
-    }
+  /* width: 540px; */
+  section.left_side, section.right_side{
+    width: 48%;
+    margin: 0 1%;
+  }
+  section.left_side div{
+    margin-bottom: 30px;
+  }
+  section.right_side div{
+    margin-top: 30px;
+  }
+  section div > h2{
+    font-size: 24px;
+  }
+
+
 }
 
 @media all and (min-width: 768px) and (max-width: 991.98px){
-    /* width: 720px; */
-    section.left_side, section.right_side{
-      width: 46%;
-      margin: 0 2%;
-    }
+  /* width: 720px; */
+  section.left_side, section.right_side{
+    width: 46%;
+    margin: 0 2%;
+  }
+  section.left_side div{
+    margin-bottom: 60px;
+  }
+  section.right_side div{
+    margin-top: 60px;
+  }
+  section div > h2{
+    font-size: 26px;
+  }
+
+
 }
 
 @media all and (min-width: 992px) and (max-width: 1199.98px){
-    /* width: 960px; */
-    section.left_side, section.right_side{
-      width: 45%;
-      margin: 0 2.5%;
-    }
+  /* width: 960px; */
+  section.left_side, section.right_side{
+    width: 45%;
+    margin: 0 2.5%;
+  }
+
+  section.left_side div{
+    margin-bottom: 80px;
+  }
+  section.right_side div{
+    margin-top: 80px;
+  }
+
 
 }
