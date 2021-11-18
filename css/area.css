@@ -456,48 +456,23 @@ main button:hover{
 @media all and (max-width: 359.98px){
   main button{
     width: 100px;
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 
 @media all and (min-width: 360px) and (max-width: 575.98px){
    /* width: 320px */
    main button{
-     width: 120px;
-     font-size: 18px;
+     width: 100px;
+     font-size: 16px;
    }
 }
 
 @media all and (min-width: 576px) and (max-width: 767.98px){
     /* width: 540px; */
     main button{
-      width: 150px;
+      width: 120px;
       font-size: 20px;
     }
 
-}
-
-
-/* RWD */
-@media all and (max-width: 359.98px){
-}
-
-@media all and (min-width: 360px) and (max-width: 575.98px){
-   /* width: 320px */
-}
-
-@media all and (min-width: 576px) and (max-width: 767.98px){
-    /* width: 540px; */
-}
-
-@media all and (min-width: 768px) and (max-width: 991.98px){
-    /* width: 720px; */
-}
-
-@media all and (min-width: 992px) and (max-width: 1199.98px){
-    /* width: 960px; */
-}
-
-@media all and (min-width: 1200px){
-    /* width: 1140px; */
 }
