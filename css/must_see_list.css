@@ -261,12 +261,12 @@ section.right_side h2{
     margin-top: 20px;
   }
   section div > a > h2{
-    font-size: 20px;
+    font-size: 18px;
     position: static;
     display: block;
     width: 100%;
     transform: none;
-    padding
+    padding: 5px;
   }
   section div > a > img{
     width: 100%;

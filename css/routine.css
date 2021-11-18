@@ -67,7 +67,7 @@ div.author img{
 
 /* 景點內容 */
 div.parent_container{
-  border: 1px solid black;
+  /* border: 1px solid black; */
   width: 1200px;
   background-image: url(../images/routine/arrow.png);
   background-repeat: no-repeat;
@@ -75,7 +75,7 @@ div.parent_container{
 }
 
 div.spot{
-  border: 1px solid red;
+  /* border: 1px solid red; */
   display: flex;
   width: 1000px;
   margin: 100px auto;
@@ -88,7 +88,7 @@ div.pic{
 }
 
 div.pic p{
-  border: 1px solid red;
+  /* border: 1px solid red; */
   position: absolute;
   color: black;
   background-color: #C4C4C4;
@@ -101,14 +101,14 @@ div.pic p{
 
 /* 右邊 */
 div.describe{
-  border: 1px solid red;
+  /* border: 1px solid red; */
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 }
 
 div.text{
-  border: 1px solid green;
+  /* border: 1px solid green; */
   padding: 20px;
 }
 
@@ -124,7 +124,7 @@ div.text > p{
 }
 
 div.describe > a{
-  border: 1px solid orange;
+  /* border: 1px solid orange; */
   width: 285px;
   margin: 0 auto;
   text-decoration: none;
