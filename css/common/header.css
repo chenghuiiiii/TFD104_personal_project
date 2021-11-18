@@ -19,6 +19,8 @@ nav.nav{
   height: 80px;
   position: relative;
   display: flex;
+  /* position: sticky;
+  top: 0; */
 }
 
 /* ==========logo img========== */
@@ -69,7 +71,7 @@ nav ul.nav_list > li > input{
   display: none;
 }
 nav ul.nav_list > li > label > img.nav_open{
-  display: none;
+  /* display: none; */
   height: 15px;
   padding-bottom: 2px;
   vertical-align: middle;
@@ -203,16 +205,20 @@ button.btn_ham{
   ul.nav_list li:first-child:hover ul.kr_travel_list{
     display: block;
   }
+  ul.nav_list li:first-child:hover img.nav_open{
+    transform: rotate(90deg);
+  }
   ul.nav_list li:nth-child(2):hover ul.uni_service_list{
     display: block;
   }
+  ul.nav_list li:nth-child(2):hover img.nav_open{
+    transform: rotate(90deg);
+  }
+
   #travel:checked ~ ul.kr_travel_list{
     display: block;
   }
   #service:checked ~ ul.uni_service_list{
     display: block;
   }
-
-
-
 }

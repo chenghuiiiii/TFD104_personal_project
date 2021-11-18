@@ -516,3 +516,28 @@ ul.pages > li > a:hover{
   background-color: rgba(106, 106, 106, 0.8);
   color: white;
 }
+@media all and (max-width: 359.98px){
+  ul.pages > li > a{
+    font-size: 12px;
+    margin: 2px;
+    padding: 5px;
+  }
+
+}
+
+@media all and (min-width: 360px) and (max-width: 575.98px){
+   /* width: 320px */
+   ul.pages > li > a{
+     font-size: 14px;
+     margin: 3px;
+     padding: 5px;
+   }
+}
+
+@media all and (min-width: 576px) and (max-width: 767.98px){
+    /* width: 540px; */
+    ul.pages > li > a{
+      font-size: 16px;
+    }
+
+}
