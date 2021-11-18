@@ -416,8 +416,30 @@ main div.hot_spot > h1.title > span::after{
 
 }
 
-
 /* ==========輪播景點========== */
+.slick-prev{
+  border: 1px solid red;
+  left: -40px;
+}
+.slick-next{
+  border: 1px solid red;
+  right: -40px;
+}
+.slick-prev::before{
+  content: url(../images/arrow_left.png);
+  border: 1px solid blue;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.slick-next::before{
+  content: url(../images/arrow_right.png);
+  border: 1px solid blue;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
 main div.spot_list{
   /* border: 1px solid green; */
   display: flex;
