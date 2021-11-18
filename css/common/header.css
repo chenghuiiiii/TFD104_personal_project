@@ -3,7 +3,9 @@ header{
   width: 100%;
   margin: 0 auto;
   background-color: #C4C4C4;
-  position: relative;
+  opacity: .9;
+  position: sticky;
+  top: 0;
   z-index: 20;
 }
 
@@ -66,7 +68,13 @@ nav ul.nav_list > li{
 nav ul.nav_list > li > input{
   display: none;
 }
-
+nav ul.nav_list > li > label > img.nav_open{
+  display: none;
+  height: 15px;
+  padding-bottom: 2px;
+  vertical-align: middle;
+  transition: all .5s;
+}
 
 ul.kr_travel_list, ul.uni_service_list{
   /* border: 3px solid white; */
@@ -111,14 +119,13 @@ button.btn_ham{
   button.btn_ham{
     display: block;
   }
-
   nav ul.nav_list{
     /* border: 2px solid red; */
     display: block;
     margin: 0;
     padding: 0;
     width: 100%;
-    background-color: rgba(196, 196, 196, 0.8);
+    background-color: rgba(196, 196, 196, 0.95);
     position: absolute;
     top: 80px;
     right: 0;
@@ -132,7 +139,6 @@ button.btn_ham{
     transform: translateX(0);
     /* display: block; */
   }
-
   nav.nav ul.nav_list > li{
     /* border: 2px solid blue; */
     display: block;
@@ -146,22 +152,35 @@ button.btn_ham{
     margin-top: 15px;
     /* position: relative; */
   }
-
   nav.nav ul.nav_list > li:last-child{
     margin-bottom: 15px;
   }
   ul.kr_travel_list, ul.uni_service_list{
     /* border: 2px solid green; */
     width: 50%;
-    display: flex;
+    display: none;
     flex-direction: column;
-    margin: 0 0 0 auto;
+    margin: 0 auto;
     text-align: left;
     position: static;
   }
+  nav ul.nav_list > li > label > img.nav_open{
+    display: inline-block;
+  }
+  #travel:checked +label img.nav_open{
+    transform: rotate(90deg);
+  }
+  #travel:checked +ul.kr_travel_list{
+    display: block;
+  }
+  #service:checked +ul.uni_service_list{
+    display: block;
+  }
+
   ul.kr_travel_list > li, ul.uni_service_list > li{
     display: block;
     width: 100%;
+    text-align: center;
   }
   ul.kr_travel_list > li > a, ul.uni_service_list > li > a{
     display: inline-block;
