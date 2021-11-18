@@ -73,7 +73,8 @@ nav ul.nav_list > li > label > img.nav_open{
   height: 15px;
   padding-bottom: 2px;
   vertical-align: middle;
-  transition: all .5s;
+  transform: rotate(0deg);
+  transition: transform .3s;
 }
 
 ul.kr_travel_list, ul.uni_service_list{
@@ -167,13 +168,16 @@ button.btn_ham{
   nav ul.nav_list > li > label > img.nav_open{
     display: inline-block;
   }
-  #travel:checked +label img.nav_open{
+  #travel:checked ~label img.nav_open{
     transform: rotate(90deg);
   }
-  #travel:checked +ul.kr_travel_list{
+  #service:checked ~label img.nav_open{
+    transform: rotate(90deg);
+  }
+  #travel:checked ~ ul.kr_travel_list{
     display: block;
   }
-  #service:checked +ul.uni_service_list{
+  #service:checked ~ ul.uni_service_list{
     display: block;
   }
 
@@ -202,10 +206,10 @@ button.btn_ham{
   ul.nav_list li:nth-child(2):hover ul.uni_service_list{
     display: block;
   }
-  #travel:checked +ul.kr_travel_list{
+  #travel:checked ~ ul.kr_travel_list{
     display: block;
   }
-  #service:checked +ul.uni_service_list{
+  #service:checked ~ ul.uni_service_list{
     display: block;
   }
 
