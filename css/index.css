@@ -244,7 +244,7 @@ main div.pargh1 > p{
 
 @media all and (max-width: 359.98px){
   main div.pargh1{
-    margin: 80px 0;
+    margin: 40px 0;
   }
   main div.pargh1 > p{
     width: 95%;
@@ -262,6 +262,9 @@ main div.pargh1 > p{
 }
 
 @media all and (min-width: 360px) and (max-width: 575.98px){
+  main div.pargh1{
+    margin: 60px 0;
+  }
   main div.pargh1 > p{
     width: 95%;
     font-size: 10px;
@@ -280,6 +283,9 @@ main div.pargh1 > p{
 
 @media all and (min-width: 576px) and (max-width: 767.98px){
     /* width: 540px; */
+    main div.pargh1{
+      margin: 80px 0;
+    }
     main div.pargh1 > p{
       width: 95%;
       font-size: 14px;
@@ -289,6 +295,9 @@ main div.pargh1 > p{
 
 @media all and (min-width: 768px) and (max-width: 991.98px){
     /* width: 720px; */
+    main div.pargh1{
+      margin: 100px 0;
+    }
     main div.pargh1 > p{
       width: 95%;
       font-size: 16px;
@@ -333,7 +342,7 @@ main div.hot_spot > h1.title > span::after{
 
 @media all and (max-width: 359.98px){
   main div.hot_spot{
-    margin-top: 100px;
+    margin-top: 60px;
   }
   main div.hot_spot > h1.title{
     font-size: 18px;
@@ -348,7 +357,7 @@ main div.hot_spot > h1.title > span::after{
 @media all and (min-width: 360px) and (max-width: 575.98px){
    /* width: 320px */
    main div.hot_spot{
-     margin-top: 100px;
+     margin-top: 80px;
    }
    main div.hot_spot > h1.title{
      font-size: 20px;
@@ -434,7 +443,6 @@ div.spot_name p{
     letter-spacing: 0px;
     line-height: 10px
   }
-
 }
 
 @media all and (min-width: 360px) and (max-width: 575.98px){
@@ -444,7 +452,6 @@ div.spot_name p{
      letter-spacing: 0px;
      line-height: 10px
    }
-
 }
 
 @media all and (min-width: 576px) and (max-width: 767.98px){
@@ -453,7 +460,6 @@ div.spot_name p{
       font-size: 10px;
       letter-spacing: 0px;
     }
-
 }
 
 @media all and (min-width: 768px) and (max-width: 991.98px){
@@ -462,7 +468,6 @@ div.spot_name p{
       font-size: 14px;
       letter-spacing: 1px;
     }
-
 }
 
 
@@ -471,6 +476,7 @@ div.spot_name p{
 main div.must_see{
   /* border: 1px solid blue; */
   margin-top: 150px;
+  margin-bottom: 250px;
 }
 
 main div.must_see > h1.title{
@@ -504,7 +510,8 @@ main div.must_see > h1.title > span::after{
 
 @media all and (max-width: 359.98px){
   main div.must_see{
-    margin-top: 100px;
+    margin-top: 60px;
+    margin-bottom: 100px;
   }
   main div.must_see > h1.title{
     font-size: 18px;
@@ -519,7 +526,8 @@ main div.must_see > h1.title > span::after{
 @media all and (min-width: 360px) and (max-width: 575.98px){
    /* width: 320px */
    main div.must_see{
-     margin-top: 100px;
+     margin-top: 80px;
+     margin-bottom: 100px;
    }
    main div.must_see > h1.title{
      font-size: 20px;
@@ -535,6 +543,7 @@ main div.must_see > h1.title > span::after{
     /* width: 540px; */
     main div.must_see{
       margin-top: 100px;
+      margin-bottom: 100px;
     }
     main div.must_see > h1.title{
       font-size: 20px;
@@ -697,7 +706,8 @@ div.special_right h1, div.routine_right h1{
   /* border: 1px solid blue; */
   border-radius: 10px;
   background-color: rgba(145, 168, 227, 0.7);
-  font-size: 24px;
+  font-size: 28px;
+  letter-spacing: 3px;
   color: white;
   font-weight: bolder;
   position: absolute;
@@ -713,7 +723,7 @@ div.special_right h1, div.routine_right h1{
 @media all and (max-width: 359.98px){
   main div.special, div.routine{
     flex-direction: column;
-    margin: 80px auto;
+    margin: 50px auto;
   }
   div.special_left h2, div.routine_left h2{
     font-size: 18px;
@@ -748,7 +758,7 @@ div.special_right h1, div.routine_right h1{
    /* width: 320px */
    main div.special, div.routine{
      flex-direction: column;
-     margin: 100px 0;
+     margin: 80px 0;
    }
    div.special_left h2, div.routine_left h2{
      font-size: 18px;
