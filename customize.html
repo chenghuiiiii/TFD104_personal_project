@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>客製行程 | UNI TRAVEL</title>
-    <link rel="stylesheet" href="./css/routine.css">
+    <link rel="stylesheet" href="./css/customize.css">
   </head>
   <body>
     <header>
@@ -16,7 +16,10 @@
         </div>
         <ul class="nav_list">
           <li>
-            <label for="travel">韓國旅遊</label>
+            <label for="travel">
+              韓國旅遊
+              <img class="nav_open" src="./images/arrow_right.png" alt="open">
+            </label>
             <input type="checkbox" id="travel">
             <ul class="kr_travel_list">
               <li><a href="./area.html">地區</a></li>
@@ -25,7 +28,10 @@
             </ul>
           </li>
           <li>
-            <label for="service">UNI服務</label>
+            <label for="service">
+              UNI服務
+              <img class="nav_open" src="./images/arrow_right.png" alt="open">
+            </label>
             <input type="checkbox" id="service">
             <ul class="uni_service_list">
               <li><a href="./customize.html">客製行程</a></li>
@@ -59,6 +65,7 @@
           <br>
           <label for=""></label>
           <textarea name="name" rows="8" cols="80"></textarea>
+          <br>
           <button type="submit" name="button">送出</button>
         </form>
       </div>
