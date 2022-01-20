@@ -37,6 +37,11 @@ main{
     margin: 0 auto;
 }
 
+.intro{
+    width: 60%;
+    margin: 50px auto;
+}
+
 
   /* form排版 */
 form.customize_form{
@@ -46,9 +51,31 @@ form.customize_form{
     grid-template-columns: 1fr 5fr;
     gap: 30px;
 }
+
+.customize_form label{
+    text-align: right;
+}
   
 button.form_button{
     grid-column: 1 / span 2;
     margin: 0 auto;
-    width: 200px;
+    width: 183px;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: bolder;
+    background-color: #EB9090;
+    border: 0 none;
+    border-radius: 5px;
+}
+
+button.form_button:hover{
+    cursor: pointer;
+    background-color: #A0B4E7;
+}
+
+.customize_form p{
+    grid-column: 1 / span 2;
+    margin: 0 auto;
+    font-weight: bold;
+    color:rgba(179, 22, 65, 1)
 }
